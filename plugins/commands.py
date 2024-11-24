@@ -42,7 +42,7 @@ async def start(client, message):
                       ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             await message.reply_text(
-                text="ᴏᴋ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴊᴜsᴛ sᴛᴀʀᴛ ᴘᴍ", 
+                text="ᴏᴋ, ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴊᴜsᴛ sᴛᴀʀᴛ ᴍᴇ ᴘᴇʀꜱᴏɴᴀʟʟʏ ɪɴ ᴍʏ ᴅᴍꜱ", 
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
@@ -69,7 +69,7 @@ async def start(client, message):
                         InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
                     ]]
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
+            m=await message.reply_sticker("CAACAgIAAxkBAAIBr2dDI0XOnpPn62EjCB1U9pGIidx0AAJ8EgAC8ZgxS6cvrXhhVMIIHgQ") 
             await asyncio.sleep(2)
             await m.delete()
             await message.reply_photo(
@@ -94,7 +94,7 @@ async def start(client, message):
                         InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
                     ]]
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
+            m=await message.reply_sticker("CAACAgIAAxkBAAIBr2dDI0XOnpPn62EjCB1U9pGIidx0AAJ8EgAC8ZgxS6cvrXhhVMIIHgQ") 
             await asyncio.sleep(2)
             await m.delete()
             await message.reply_photo(
