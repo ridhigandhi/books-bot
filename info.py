@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', "21145186"))
 API_HASH = environ.get('API_HASH', "daa53f4216112ad22b8a8f6299936a46")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7296278954:AAHXDtLB5JFRiBTe0b4Ifh6mdq2afZbdb1U")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7457680560:AAHfNbbdWqUBxyE52sFZNeWh-boi6fwR-wQ")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
@@ -57,7 +57,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:ViqwwxVlJVle7GEi@foxy.tcgdg.mongodb.net/?retryWrites=true&w=majority&appName=foxy")
 DATABASE_NAME = environ.get('DATABASE_NAME', "foxy")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Badam_Badam')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'hoti_noti')
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'sharedisklinks.com'))
