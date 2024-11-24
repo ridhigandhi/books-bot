@@ -1,12 +1,13 @@
 class script(object):
-    START_TXT = """<b><i>ʜᴇʏ 😎</i></b> {},
-<b><blockquote>Iᴍ Tʜᴇ Mᴏsᴛ Aᴅᴠᴀɴᴄᴇ Aɪ Pᴏᴡᴇʀᴅ Bᴏᴛ.🥰
-Jᴜꜱᴛ Sᴇɴᴅ Mᴇ Aɴʏ Mᴏᴠɪᴇꜱ & Sᴇʀɪᴇꜱ Nᴀᴍᴇ Aɴᴅ Sᴇᴇ Mʏ Pᴏᴡᴇʀ.</b></blockquote>
+    START_TXT = """<b><i>ʜᴇʟʟᴏ ᴘᴏᴏᴋɪᴇ 🥰</i></b> {},
 
-<b><spoiler>🔋 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ - <a href=https://t.me/safaridev>ᎦᎯ೯ᎯᏒᎥ</b></spoiler></a>"""
+<b><blockquote>ɪ ᴀᴍ ᴀ ᴍᴏᴠɪᴇ ʙᴏᴛ ᴛʜᴀᴛ ᴘʀᴏᴠɪᴅᴇꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ᴡᴇʙꜱᴇʀɪᴇꜱ ɪɴꜱɪᴅᴇ ᴀ ɢʀᴏᴜᴘ ᴏʀ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴏɴ ᴘᴇʀꜱᴏɴᴀʟ ɪɴᴛᴇʀᴀᴄᴛɪᴏɴꜱ.
+ᴛᴏ ᴇɴᴊᴏʏ ᴍʏ ꜰᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ, ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ(ꜱ) ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴇᴠᴇʀʏ ʀɪɢʜᴛ.</b></blockquote>
+
+<b><spoiler>🔋 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ - <a href=https://t.me/infohub_updates>ɪɴꜰᴏʜᴜʙ ᴜᴘᴅᴀᴛᴇꜱ</b></spoiler></a>"""
     
-    HELP_TXT = """<b>ʜᴇʏ {},
-ᴡᴇ ʜᴀᴠᴇ ᴅᴇᴠɪᴅᴇᴅ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀꜱ ᴀɴᴅ ʙᴏᴛ ᴜꜱᴇʀꜱ.</b>"""
+    HELP_TXT = """<b>ʜᴇʏ ᴘᴏᴏᴋɪᴇ {},
+ᴡᴇ ʜᴀᴠᴇ ᴅɪᴠɪᴅᴇᴅ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀꜱ ᴀɴᴅ ʙᴏᴛ ᴜꜱᴇʀꜱ.</b>"""
 
     
     BLACKLIST = ['tamilblaster', 'filmyzilla', 'streamershub', 'xyz', 'cine', 'www', 'http', 'https',
@@ -21,9 +22,9 @@ Jᴜꜱᴛ Sᴇɴᴅ Mᴇ Aɴʏ Mᴏᴠɪᴇꜱ & Sᴇʀɪᴇꜱ Nᴀᴍᴇ Aɴ�
     
     
     REFFER_TXT = """
-<b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ғʀɪᴇɴᴅs ᴀɴᴅ ғᴀᴍɪʟʏ, ᴀɴᴅ ᴄᴏʟʟᴇᴄᴛ 50 ᴘᴏɪɴᴛ
+<b>ʀᴇғᴇʀ ᴛʜɪꜱ ʙᴏᴛᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs ᴀɴᴅ ғᴀᴍɪʟʏ, ᴀɴᴅ ᴄᴏʟʟᴇᴄᴛ 50 ᴘᴏɪɴᴛꜱ
 
-Note: = ᴘᴇʀ ʀᴇғғᴇʀ 10 ᴘᴏɪɴᴛ
+🎀 ɴᴏᴛᴇ: ᴇᴀᴄʜ ʀᴇꜰᴇʀ ᴄᴀʀʀɪᴇꜱ 10 ᴘᴏɪɴᴛꜱ!
 
 ʏᴏᴜʀ ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=reff_{}
 
@@ -43,9 +44,9 @@ Note: = ᴘᴇʀ ʀᴇғғᴇʀ 10 ᴘᴏɪɴᴛ
 ____________________________
 ʙᴜʏ ᴘᴀɪᴅ ᴘʟᴀɴ ʙʏ - /plans</b>"""
 
-    FSUB_TXT = """<i><b>🙁 ғɪʀꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴍᴏᴠɪᴇ, ᴏᴛʜᴇʀᴡɪꜱᴇ ʏᴏᴜ ᴡɪʟʟ ɴᴏᴛ ɢᴇᴛ ɪᴛ.
+    FSUB_TXT = """<i><b>👀 ʜᴇʟʟᴏ ᴘᴏᴏᴋɪᴇ, ʙᴇꜰᴏʀᴇ ʏᴏᴜ ɢᴇᴛ ʏᴏᴜʀ ꜰᴀᴠᴏʀɪᴛᴇ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ, ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ʙʏ ᴊᴏɪɴɪɴɢ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ʙᴇʟᴏᴡ.
 
-ᴄʟɪᴄᴋ ᴊᴏɪɴ ɴᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b></i>"""
+ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴊᴏɪɴ ɴᴏᴡ' ʙᴜᴛᴛᴏɴ 👇</b></i>"""
 
     VERIFICATION_TEXT = """<b>ʜᴇʏ {},
 
@@ -116,16 +117,16 @@ ____________________________
     FILE_LIMIT = """
 📁 ʏᴏᴜʀ ғɪʟᴇ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 
-ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ғɪʟᴇs ᴛʜᴇɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ
+ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ғɪʟᴇs ᴛʜᴇɴ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ✨
 
 💲sᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs /plans
 
 ʀᴇsᴇᴛ ᴛɪᴍᴇ ⌚ = 11.59 PM.
 """
     BUTTON_LIMIT = """
-sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
+🎡 'sᴇɴᴅ ᴀʟʟ' ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 
-ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ʙᴜᴛᴛᴏɴ ᴜsᴇ ᴛʜᴇɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ
+ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ʙᴜᴛᴛᴏɴ ᴜsᴇ ᴛʜᴇɴ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ
 
 💲sᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs /plans
 
@@ -134,20 +135,20 @@ sᴇɴᴅ ᴀʟʟ ʙᴜᴛᴛᴏɴ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ
 
     ABOUT_TXT = """<b>
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
-‣ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/safaridev>ᎦᎯ೯ᎯᏒᎥ</a>
-‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ
-‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ
-‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ
-‣ ʜᴏsᴛᴇᴅ ᴏɴ  : ʜᴇʀᴏᴋᴜ
+‣ ᴄʀᴇᴀᴛᴏʀ : <a href=https://t.me/infohub_updates>ɪɴꜰᴏʜᴜʙ ᴜᴘᴅᴀᴛᴇꜱ</a>
+‣ ʟɪʙʀᴀʀʏ : <a href=https://docs.pyrogram.org/>ᴘʏʀᴏɢʀᴀᴍ</a>
+‣ ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ</a>
+‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href=https://www.mongodb.com/>ᴍᴏɴɢᴏ ᴅʙ</a>
+‣ ʜᴏsᴛᴇᴅ ᴏɴ  : <a href=https://www.heroku.com/>ʜᴇʀᴏᴋᴜ</a>
 ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ4.2 [sᴛᴀʙʟᴇ]</b>"""
 
-    FEATURES = """💥 ғᴇᴀᴛᴜʀᴇs ᴀʟʟ ʟɪsᴛ 💥
+    FEATURES = """💥 ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ꜰᴇᴀᴛᴜʀᴇꜱ 💥
     
-‣ /telegraph - Sᴇɴᴅ Mᴇ Pʜᴏᴛᴏ Oʀ Vɪᴅᴇᴏ Uɴᴅᴇʀ(5ᴍʙ) Aɴᴅ Rᴇᴘʟʏ Wɪᴛʜ Cᴏᴍᴍᴀᴍɴᴅ
+‣ /telegraph - Sᴇɴᴅ Mᴇ Pʜᴏᴛᴏ Oʀ Vɪᴅᴇᴏ Uɴᴅᴇʀ(5ᴍʙ) Aɴᴅ Rᴇᴘʟʏ Wɪᴛʜ Cᴏᴍᴍᴀᴍɴᴅ [ɴᴏɴ-ꜰᴜɴᴄᴛɪᴏɴᴀʟ ꜱɪɴᴄᴇ https://t.me/durov/343 ᴅʀᴏᴘᴘᴇᴅ]
 
 ‣ /font - ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴍᴏᴅᴇ ᴛᴏ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ꜰᴏɴᴛs sᴛʏʟᴇ
 
-ᴇxᴛʀᴀ ғᴇᴀᴛᴜʀᴇ ᴄᴏᴍɪɴɢ"""
+ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ ᴡɪʟʟ ʙᴇ ᴀᴅᴅᴇᴅ ᴡɪᴛʜ ꜰᴜᴛᴜʀᴇ ᴜᴘᴅᴀᴛᴇꜱ ⌛"""
 
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
@@ -168,10 +169,12 @@ Nᴀᴍᴇ - {}
 Bᴏᴛ {}"""
 
     ALRT_TXT = """{},
-ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
-ʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ..."""
+ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ,
+ʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ ᴏᴡɴ, ᴘᴏᴏᴋɪᴇ 😘"""
 
-    CUDNT_FND = """<i>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
+    CUDNT_FND = """<blockquote>ᴏʜʜ ɴᴏ ᴘᴏᴏᴋɪᴇ! 😔</blockquote>
+    
+<i>ɪ ᴄᴏᴜʟᴅ ɴᴏᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ '{}'
 ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?</i>"""
 
     I_CUDNT = """<i>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ {} 😕
@@ -183,18 +186,20 @@ sᴇᴀʀᴄʜ🔍 ғᴏʀᴍᴀᴛ 👇
 Pushpa 2021
 Money heist S0E01
 
-ᴏɴʟʏ ɴᴀᴍᴇ ᴏʀ ʏᴇᴀʀ ɴᴏ ᴇxᴛʀᴀ ᴡᴏʀᴅ</i>"""
+ᴏɴʟʏ ɴᴀᴍᴇ ᴏʀ ʏᴇᴀʀ ɴᴏ ᴇxᴛʀᴀ ᴡᴏʀᴅꜱ ᴏʀ ɪɴꜰᴏ</i>"""
 
-    I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
-ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
+    I_CUD_NT = """<blockquote>ᴏʜʜ ɴᴏ ᴘᴏᴏᴋɪᴇ! 😔</blockquote>
+    
+ɪ ᴄᴏᴜʟᴅ ɴᴏᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ <i>'{}'</i>.
+ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ ⌛"""
 
-    MVE_NT_FND = """<i>ᴡᴇ ᴅɪᴅ ɴᴏᴛ ғɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ᴡɪᴛʜ ᴛʜɪs ɴᴀᴍᴇ 🙅,
+    MVE_NT_FND = """<i>ᴡᴇ ᴅɪᴅ ɴᴏᴛ ғɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ᴡɪᴛʜ ᴛʜɪs ɴᴀᴍᴇ 🙅,
 
-ᴛʜɪs ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴ</i>..."""
+ᴛʜɪs ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴ</i>..."""
 
-    TOP_ALRT_MSG = """sᴇᴀʀᴄʜɪɴɢ 🔍..."""
+    TOP_ALRT_MSG = """sᴇᴀʀᴄʜɪɴɢ ᴘᴏᴏᴋɪᴇ..."""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
+    MELCOW_ENG = """<b>Hᴇʟʟᴏ ᴘᴏᴏᴋɪᴇ, {} 😍!\n\nWᴇʟᴄᴏᴍᴇ Tᴏ {} ❤️</b>"""
 
     
 
@@ -215,17 +220,26 @@ Money heist S0E01
 ★ Mᴇssᴀɢᴇ <code>{}</code>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <b>{file_name}</b>"""
+<b>📂 ꜰɪʟᴇ ɴᴀᴍᴇ :</b> {file_name}
+<b>🎡 ꜰɪʟᴇ ꜱɪᴢᴇ :</b> {file_size}
+
+<b>╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+▫️<a href=https://t.me/theultimatetheatre> 22ɴᴅ ᴄᴇɴᴛᴜʀʏ ᴄɪɴᴇᴍᴀꜱ ▫️</a>
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>
+
+💡 <u><b>ᴘʀᴏ ᴛɪᴘ:</b></u> <i>ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ʏᴏᴜ ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴇ, ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴇʀꜱᴏɴᴀʟ ꜱᴀᴠᴇᴅ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴛʜᴇɴ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ɪᴛ ᴛʜᴇʀᴇ.\n\nᴏɴᴄᴇ ɪᴛ ɪꜱ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ, ᴜꜱᴇ ᴠʟᴄ ᴍᴇᴅɪᴀ ᴘʟᴀʏᴇʀ ꜰᴏʀ ꜱᴡɪᴛᴄʜɪɴɢ ʙᴇᴛᴡᴇᴇɴ ʟᴀɴɢᴜᴀɢᴇꜱ ᴀɴᴅ ꜱᴜʙᴛɪᴛʟᴇꜱ!</i>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>
 🏷 Title: <a href={url}>{title}</a>
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b> """
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b> 
+
+©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ: @theultimatetheatre"""
     
     CHANNELS = """
-<b>ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ғᴏʀ ʀᴇᴘᴏ ᴜᴘᴅᴀᴛᴇs </b>"""
+<b>ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs </b>"""
     
     STATUS_TXT = """<b>    
 ‣ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
@@ -236,11 +250,17 @@ Money heist S0E01
 </b>"""
 
     DISCLAIMER_TXT = """
-<b>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
+<b>𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 (@webseries_robot) is an auto-filter bot designed to index and share publicly available files on the internet. Our mission is to make these files easier to find, view, download, and stream on Telegram. This bot does not create or hold exclusive copyright over any shared files and simply provides convenient access to what is already available online.
 
-ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ. ᴊᴜꜱᴛ ꜰᴏʀ ᴇᴀꜱʏ ꜱᴇᴀʀᴄʜɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢ ꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ. ɪᴛ ɪꜱ ꜰᴏʀʙɪʙʙᴇɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ꜱᴛʀᴇᴀᴍ, ʀᴇᴘʀᴏᴅᴜᴄᴇ, ꜱʜᴀʀᴇ ᴏʀ ᴄᴏɴꜱᴜᴍᴇ ᴄᴏɴᴛᴇɴᴛ ᴡɪᴛʜᴏᴜᴛ ᴇxᴘʟɪᴄɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ ᴏʀ ʟᴇɢᴀʟ ᴄᴏᴘʏʀɪɢʜᴛ ʜᴏʟᴅᴇʀ. ɪꜰ ʏᴏᴜ ʙᴇʟɪᴇᴠᴇ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴠɪᴏʟᴀᴛɪɴɢ ʏᴏᴜʀ ɪɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ ᴘʀᴏᴘᴇʀᴛʏ, ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ʀᴇꜱᴘᴇᴄᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ ꜰᴏʀ ʀᴇᴍᴏᴠᴀʟ. ᴛʜᴇ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴏᴡɴ ᴀɴʏ ᴏꜰ ᴛʜᴇꜱᴇ ᴄᴏɴᴛᴇɴᴛꜱ, ɪᴛ ᴏɴʟʏ ɪɴᴅᴇx ᴛʜᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ. 
+We strongly discourage the misuse of this bot for unethical or unlawful purposes. 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 stands against piracy and respects the rights of content creators. If anyone believes their copyright or intellectual property rights have been violated, please contact us via @infohubsupport_robot on Telegram with verified proof of ownership. Upon confirmation, we will promptly remove any infringing content.
 
-🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href=https://t.me/safaridev>ᎦᎯ೯ᎯᏒᎥ</a>"""
+Our official group, 22nd Century Cinemas, provides a secure, transparent environment for users. While the bot may be added to other groups, we disclaim any responsibility for how it is used outside of our official channels. For a safer experience, we encourage users to join our official group.
+
+Users who add the bot to their groups must give the bot every one of the admin rights and use the /settings command to configure the bot inside their group according to their preferences.
+
+By using 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 to request any file, users acknowledge and agree to the terms above. 
+
+🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href=https://t.me/infohub_updates>ɪɴꜰᴏʜᴜʙ ᴜᴘᴅᴀᴛᴇꜱ</a>"""
 
     USERS_TXT = """
 👇 ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ғᴏʀ ᴜꜱᴇʀꜱ 👇
@@ -249,7 +269,7 @@ Money heist S0E01
 • /info  - ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.
 • /imdb  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.
 • /search  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.
-• /request - sᴇɴᴅ ᴀ Mᴏᴠɪᴇ/Sᴇʀɪᴇs ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ ʙᴏᴛ ᴀᴅᴍɪɴs. ( ᴏɴʟʏ ᴡᴏʀᴋs ᴏɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ )
+• /request - sᴇɴᴅ ᴀ Mᴏᴠɪᴇ/Sᴇʀɪᴇs ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ ʙᴏᴛ ᴀᴅᴍɪɴs. 
 • /plans - ᴄʜᴇᴄᴋ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ ᴘʟᴀɴꜱ.
 • /myplan - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴜɴᴛ ᴘʟᴀɴ.
 • /redeem - ʀᴇᴅᴇᴇᴍ ʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ᴄᴏᴅᴇ
@@ -349,14 +369,16 @@ Money heist S0E01
 💵 ᴜᴘɪ ɪᴅ - <code>JEETUBIND@paytm</code>
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
-<i>पेमेंट होने के बाद हमे स्क्रीन शॉट भेजें</i>.</b>"""
+
+<i>‼️ पेमेंट होने के बाद हमे स्क्रीन शॉट भेजें</i>.</b>"""
 
     QR_TXT = """<b>
 ⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
 
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
-<i>पेमेंट होने के बाद हमे स्क्रीन शॉट भेजें</i>.</b>"""
+
+<i>‼️ पेमेंट होने के बाद हमे स्क्रीन शॉट भेजें</i>.</b>"""
 
     FREE_TXT = """<b>👋 ʜᴇʏ {},
     
@@ -364,12 +386,12 @@ Money heist S0E01
 
 🎉 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʀᴀɪʟ ꜰᴏʀ <u>5 ᴍɪɴᴜᴛᴇs 
 
-sᴇᴀʀᴄʜ🔍 ᴍᴏᴠɪᴇ ᴀɢᴀɪɴ</u> ꜰʀᴏᴍ ɴᴏᴡ !</b>"""
+sᴇᴀʀᴄʜ🔍 ᴍᴏᴠɪᴇ ᴀɢᴀɪɴ</u></b>"""
     
     
     NOT_AVAILABLE_TXT = """{}
 
-ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"""
+ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ɪꜱ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ"""
 
     SERIES_FORMAT_TXT = """{}
     
@@ -381,18 +403,18 @@ Money heist S01"""
 
     UPLOADED_TXT = """{}
     
-ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ᴜᴘʟᴏᴀᴅᴇᴅ ✅
-sᴇᴀʀᴄʜ 🔍 ᴀɢᴀɪɴ ᴀɴᴅ ɪɴᴊᴏʏ"""
+ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ɪꜱ ᴜᴘʟᴏᴀᴅᴇᴅ ✅
+sᴇᴀʀᴄʜ ᴀɢᴀɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ 🥰"""
 
     NOT_RELEASE_TXT = """{} 
     
-ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ɴᴏᴛ ʀᴇʟᴇᴀsᴇ 
-ᴘʟᴇᴀsᴇ🙏 ᴡᴀɪᴛ ᴛʜᴇ ʀᴇʟᴇᴀsᴇ ᴅᴀʏ"""
+ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ᴅɪᴅ ɴᴏᴛ ʀᴇʟᴇᴀꜱᴇ ʏᴇᴛ 
+ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴜɴᴛɪʟ ɪᴛ ɪꜱ ʀᴇʟᴇᴀꜱᴇᴅ! 👀"""
 
     SPELL_TXT = """{} 
-ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ ɴᴀᴍᴇ ɴᴏᴛ ᴍᴀᴛᴄʜ ᴀɴʏ sᴇʀɪᴇs ᴏʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ 
+ᴛʜᴇ ɴᴀᴍᴇ ʏᴏᴜ ꜱᴇɴᴛ ᴅɪᴅ ɴᴏᴛ ᴍᴀᴛᴄʜ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ᴀꜱ ᴏꜰ ɴᴏᴡ.
 
-ᴘʟᴇᴀsᴇ ʀᴇǫᴜᴇsᴛ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ"""
+ᴘʟᴇᴀsᴇ ʀᴇǫᴜᴇsᴛ ᴜꜱɪɴɢ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ"""
     
     
     BROADCAST = """<u>{}</u>
