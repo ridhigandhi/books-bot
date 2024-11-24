@@ -1324,14 +1324,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🛠️ ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
-                    InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', callback_data='features')
+                    InlineKeyboardButton('💡 ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='features')
                 ],[
                     InlineKeyboardButton('🍀 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('🆓 ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"),
                     InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
-                 ]]
+                 ],[
+                    InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_robot')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
