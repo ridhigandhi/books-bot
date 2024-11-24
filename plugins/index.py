@@ -35,13 +35,13 @@ async def index_files(bot, query):
         return
 
     if lock.locked():
-        return await query.answer('Wait until previous process complete.', show_alert=True)
+        return await query.answer('Wait until previous process is finished.', show_alert=True)
     msg = query.message
 
     await query.answer('Processing...⏳', show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
-                               f'Your Submission for indexing {chat} has been accepted by our moderators and will be added soon.',
+                               f'Your Submission for indexing {chat} has been accepted by our moderators and the index has already started!',
                                reply_to_message_id=int(lst_msg_id))
     await msg.edit(
         "Starting Indexing",
@@ -145,9 +145,9 @@ async def send_for_index(bot, message):
     try:
         k = await bot.get_messages(chat_id, last_msg_id)
     except:
-        return await message.reply('Make Sure That Iam An Admin In The Channel, if channel is private')
+        return await message.reply('Make Sure That I am An Admin In The Channel, if channel is private')
     if k.empty:
-        return await message.reply('This may be group and iam not a admin of the group.')
+        return await message.reply('This may be group and i am not a admin of the group.')
 
     if message.from_user.id in ADMINS:
         buttons = [
