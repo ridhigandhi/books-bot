@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', "21145186"))
 API_HASH = environ.get('API_HASH', "daa53f4216112ad22b8a8f6299936a46")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7457680560:AAHctMMkSeyV9hPZEc5toaYXvh1a8MLYh-4")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7296278954:AAE_APGB1lbWfwAs3QLQpGp6SP6YzpirQcw")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
@@ -55,9 +55,9 @@ AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:k6GuMKMtnFN2eUvJ@vixen.y6fml.mongodb.net/?retryWrites=true&w=majority&appName=vixen")
-DATABASE_NAME = environ.get('DATABASE_NAME', "vixen")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'GOTfunnybot')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:6qAAckIWzPuV0ESK@hellsnow.t6axa.mongodb.net/?retryWrites=true&w=majority&appName=hellsnow")
+DATABASE_NAME = environ.get('DATABASE_NAME', "hellsnow")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'sharedisklinks.com'))
