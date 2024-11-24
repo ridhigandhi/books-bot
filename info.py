@@ -55,9 +55,9 @@ AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:k6GuMKMtnFN2eUvJ@vixen.y6fml.mongodb.net/?retryWrites=true&w=majority&appName=vixen")
-DATABASE_NAME = environ.get('DATABASE_NAME', "vixen")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'GOTfunnybot')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:6qAAckIWzPuV0ESK@hellsnow.t6axa.mongodb.net/?retryWrites=true&w=majority&appName=hellsnow")
+DATABASE_NAME = environ.get('DATABASE_NAME', "hellsnow")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'sharedisklinks.com'))
