@@ -54,12 +54,13 @@ async def getfile(client, message):
                     f"<b>🎬 Genres: {genres}</b>\n"
                     f"<b>⭐️ Rating: {rating}/10</b>\n"
                     f"<b>📆 Year: {year}</b>\n\n"
+                    f"📕 Story: {plot}\n\n"
                     f"📕 Story: {hindi_plot}"
                 ),
                 reply_markup=safari_markup,
                 parse_mode=enums.ParseMode.HTML,
             )
-            await message.reply_text("Do you want to post this content on POST_CAHNNELS ?",
+            await message.reply_text("Do you want to post this content on @movieplexus ?",
                 reply_markup=reply_markup)
         else:
             await message.reply_text(
@@ -68,12 +69,13 @@ async def getfile(client, message):
                     f"<b>🎬 Genres: {genres}</b>\n"
                     f"<b>⭐️ Rating: {rating}/10</b>\n"
                     f"<b>📆 Year: {year}</b>\n\n"
+                    f"📕 Story: {plot}\n\n"
                     f"📕 Story: {hindi_plot}"
                 ),
                 reply_markup=safari_markup,
                 parse_mode=enums.ParseMode.HTML,
             )
-            await message.reply_text("Do you want to post this content on POST_CAHNNEL ?",
+            await message.reply_text("Do you want to post this content on @movieplexus ?",
                 reply_markup=reply_markup)
     except Exception as e:
         await message.reply_text(f"Error: {str(e)}")
@@ -111,6 +113,7 @@ async def post_to_channels(client, callback_query):
                             f"<b>🎬 Genres: {genres}</b>\n"
                             f"<b>⭐️ Rating: {rating}/10</b>\n"
                             f"<b>📆 Year: {year}</b>\n\n"
+                            f"📕 Story: {plot}\n\n"
                             f"📕 Story: {hindi_plot}"
                         ),
                         reply_markup=reply_markup,
@@ -124,6 +127,7 @@ async def post_to_channels(client, callback_query):
                             f"<b>🎬 Genres: {genres}</b>\n"
                             f"<b>⭐️ Rating: {rating}/10</b>\n"
                             f"<b>📆 Year: {year}</b>\n\n"
+                            f"📕 Story: {plot}\n\n"
                             f"📕 Story: {hindi_plot}"
                         ),
                         reply_markup=reply_markup,
@@ -132,7 +136,7 @@ async def post_to_channels(client, callback_query):
             except Exception as e:
                 await callback_query.message.reply_text(f"Error posting to channel {channel_id}: {str(e)}")
         
-        await callback_query.message.edit_text("Movie details successfully posted to channels.")
+        await callback_query.message.edit_text("Movie details successfully posted to dedicated channel")
     
     elif action == "no":
-        await callback_query.message.edit_text("Movie details will not be posted to channels.")
+        await callback_query.message.edit_text("Movie details will not be posted to dedicated channel.")
