@@ -59,14 +59,15 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('✪ ᴜᴘᴅᴀᴛᴇꜱ ✪', callback_data='channels'), 
-                        InlineKeyboardButton('⚔️ғᴇᴀᴛᴜʀᴇs ⚔️', callback_data='features')
+                        InlineKeyboardButton('✪ ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
+                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', callback_data='features')
                     ],[
-                        InlineKeyboardButton('🍀 Hᴇʟᴘ 🍀', callback_data='help'),
-                        InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ 🤖', callback_data='about')
+                        InlineKeyboardButton('🍀 Hᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🆓 ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"), 
-                        InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ✨', callback_data="premium_info")
+                        InlineKeyboardButton('🆓 ɢᴇᴛ ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff")
+                    ],[
+                        InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
                     ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
@@ -90,8 +91,9 @@ async def start(client, message):
                         InlineKeyboardButton('🍀 Hᴇʟᴘ 🍀', callback_data='help'),
                         InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ 🤖', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🆓 ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"), 
-                        InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ✨', callback_data="premium_info")
+                        InlineKeyboardButton('🆓 ɢᴇᴛ ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff")
+                    ],[
+                        InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
                     ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
@@ -133,7 +135,7 @@ async def start(client, message):
                 await message.reply_text("Invalid refer!")
                 return
             if user_id == message.from_user.id:
-                await message.reply_text("Hᴇʏ Dᴜᴅᴇ, Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ 🤣!\n\nsʜᴀʀᴇ ʟɪɴᴋ ʏᴏᴜʀ ғʀɪᴇɴᴅ ᴀɴᴅ ɢᴇᴛ 5 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛ ɪғ ʏᴏᴜ ᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪɴɢ 50 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀsʜɪᴘ.")
+                await message.reply_text("Hᴇʏ Dᴜᴅᴇ, Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ 🤣!\n\nsʜᴀʀᴇ ʟɪɴᴋ ʏᴏᴜʀ ғʀɪᴇɴᴅ ᴀɴᴅ ɢᴇᴛ 10 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛ ɪғ ʏᴏᴜ ᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪɴɢ 50 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀsʜɪᴘ.")
                 return
             if sdb.is_user_in_list(message.from_user.id):
                 await message.reply_text("Yᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ɪɴᴠɪᴛᴇᴅ ❗")
@@ -154,7 +156,7 @@ async def start(client, message):
                     text=f"<b>Hᴇʏ {uss.mention}\n\nYᴏᴜ ɢᴏᴛ 1 ᴍᴏɴᴛʜ ᴘʀᴇᴍɪᴜᴍ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʙʏ ɪɴᴠɪᴛɪɴɢ 5 ᴜsᴇʀs ❗", disable_web_page_preview=True              
                     )
                 for admin in ADMINS:
-                    await client.send_message(chat_id=admin, text=f"Sᴜᴄᴄᴇss ғᴜʟʟʏ ᴛᴀsᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙʏ ᴛʜɪs ᴜsᴇʀ:\n\nuser Nᴀᴍᴇ: {uss.mention}\n\nUsᴇʀ ɪᴅ: {uss.id}!")	
+                    await client.send_message(chat_id=admin, text=f"Sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴀsᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙʏ ᴛʜɪs ᴜsᴇʀ:\n\nuser Nᴀᴍᴇ: {uss.mention}\n\nUsᴇʀ ɪᴅ: {uss.id}!")	
                 return
         safari = message
         user_id = safari.from_user.id  
@@ -277,7 +279,7 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ⁉️", url=tutorial)
                     ],[
-                        InlineKeyboardButton("✨5ᴍɪɴ Pʀᴇᴍɪᴜᴍ Tʀᴀɪʟ✨", callback_data=f'give_trial')
+                        InlineKeyboardButton("✨5 ᴍɪɴ Pʀᴇᴍɪᴜᴍ Tʀᴀɪʟ✨", callback_data=f'give_trial')
                     ]]
                 else:
                     buttons = [[
@@ -305,7 +307,7 @@ async def start(client, message):
         if data and data.startswith("allfiles"):
             files = temp.GETALL.get(file_id)
             if not files:
-                return await message.reply('<b><i>Nᴏ Sᴜᴄʜ Fɪʟᴇ Eᴇxɪsᴛ.</b></i>')
+                return await message.reply('<b><i>Nᴏ Sᴜᴄʜ Fɪʟᴇ ᴇxɪsᴛ.</b></i>')
             filesarr = []
             for file in files:
                 file_id = file.file_id
@@ -326,7 +328,7 @@ async def start(client, message):
                         f_caption += f"<b>\n\nAʟʟ Bᴜᴛᴛᴏɴ Lɪᴍɪᴛ : {files_count}/{limit}</b>"
                         if send_count is not None and send_count >= limit:
                             buttons = [[
-                                       InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛᴇ ✨', callback_data=f'premium_info')
+                                       InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛ ✨', callback_data=f'premium_info')
                                       ]]
                             reply_markup = InlineKeyboardMarkup(buttons)
                             return await message.reply_text(script.BUTTON_LIMIT, 
@@ -344,7 +346,7 @@ async def start(client, message):
                 )
                 filesarr.append(msg)
             if await db.get_setting("AUTO_FILE_DELETE", default=AUTO_FILE_DELETE):
-                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
+                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
                 await asyncio.sleep(900)
                 for x in filesarr:
                     await x.delete()
@@ -362,7 +364,7 @@ async def start(client, message):
                         f_caption += f"<b>\n\nDᴀɪʟʏ Fɪʟᴇ Lɪᴍɪᴛ: {files_count}/{limit}</b>"      
                         if files_counts is not None and files_counts >= limit:
                             buttons = [[
-                                       InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛᴇ ✨', callback_data=f'premium_info')
+                                       InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛ ✨', callback_data=f'premium_info')
                                       ]]
                             reply_markup = InlineKeyboardMarkup(buttons)
                             return await message.reply_text(script.FILE_LIMIT,
@@ -409,7 +411,7 @@ async def start(client, message):
                 f_caption += f"<b>\n\nDᴀɪʟʏ Fɪʟᴇ Lɪᴍɪᴛ: {files_count}/{limit}</b>"      
                 if files_counts is not None and files_counts >= limit:
                     buttons = [[
-                               InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛᴇ ✨', callback_data=f'premium_info')
+                               InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛ ✨', callback_data=f'premium_info')
                               ]]
                     reply_markup = InlineKeyboardMarkup(buttons)
                     return await message.reply_text(script.FILE_LIMIT,
@@ -682,7 +684,7 @@ async def set_tutorial_1(client, message):
     try:
         tutorial = message.text.split(" ", 1)[1]
     except:
-        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_tutorial https://t.me/safaribotts</code>")
+        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_tutorial https://t.me/infohub_updates</code>")
     await save_group_settings(grp_id, 'tutorial', tutorial)
     await message.reply_text(f"<b>Successfully changed tutorial for {title}</b>\n\nLink - {tutorial}", disable_web_page_preview=True)
     await client.send_message(LOG_CHANNEL, f"Tutorial for {title} (Group ID: {grp_id}, Invite Link: {invite_link}) has been updated by {message.from_user.username}")
@@ -702,7 +704,7 @@ async def set_tutorial_2(client, message):
     try:
         tutorial = message.text.split(" ", 1)[1]
     except:
-        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_tutorial https://t.me/safaribotts</code>")
+        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_tutorial https://t.me/infohub_updates</code>")
     await save_group_settings(grp_id, 'tutorial2', tutorial)
     await message.reply_text(f"<b>Successfully changed tutorial for {title}</b>\n\nLink - {tutorial}", disable_web_page_preview=True)
     await client.send_message(LOG_CHANNEL, f"Tutorial 2 for {title} (Group ID: {grp_id}, Invite Link: {invite_link}) has been updated by {message.from_user.username}")
@@ -722,7 +724,7 @@ async def set_tutorial_3(client, message):
     try:
         tutorial = message.text.split(" ", 1)[1]
     except:
-        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_tutorial https://t.me/safaribotts</code>")
+        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_tutorial https://t.me/infohub_updates</code>")
     await save_group_settings(grp_id, 'tutorial3', tutorial)
     await message.reply_text(f"<b>Successfully changed tutorial for {title}</b>\n\nLink - {tutorial}", disable_web_page_preview=True)
     await client.send_message(LOG_CHANNEL, f"Tutorial 2 for {title} (Group ID: {grp_id}, Invite Link: {invite_link}) has been updated by {message.from_user.username}")
@@ -797,7 +799,7 @@ async def set_verify2(c, m):
     except Exception as e:
         await save_group_settings(grp_id, 'verify_2', VERIFY_URL2)
         await save_group_settings(grp_id, 'verify_api2', VERIFY_API2)
-        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/safarisuport>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_verify2 shortyfi.link 465d89bf8d7b71277a822b890f7cc3e2489acf73`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
+        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/infohubsupport_robot>sᴜᴘᴘᴏʀᴛ</a> ᴛᴏ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_verify2 shortyfi.link 465d89bf8d7b71277a822b890f7cc3e2489acf73`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
 
 @Client.on_message(filters.command('set_verify3'))
 async def set_verify3(c, m):
