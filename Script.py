@@ -1,8 +1,7 @@
 class script(object):
     START_TXT = """<b><i>ʜᴇʟʟᴏ ᴘᴏᴏᴋɪᴇ 🥰</i></b> {},
 
-<b><blockquote>ɪ ᴀᴍ ᴀ ᴍᴏᴠɪᴇ ʙᴏᴛ ᴛʜᴀᴛ ᴘʀᴏᴠɪᴅᴇꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ᴡᴇʙꜱᴇʀɪᴇꜱ ɪɴꜱɪᴅᴇ ᴀ ɢʀᴏᴜᴘ ᴏʀ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴏɴ ᴘᴇʀꜱᴏɴᴀʟ ɪɴᴛᴇʀᴀᴄᴛɪᴏɴꜱ.
-ᴛᴏ ᴇɴᴊᴏʏ ᴍʏ ꜰᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ, ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ(ꜱ) ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴇᴠᴇʀʏ ʀɪɢʜᴛ.</b></blockquote>
+<b><blockquote>ɪ ᴀᴍ ᴀ ᴍᴏᴠɪᴇ ʙᴏᴛ ᴛʜᴀᴛ ᴘʀᴏᴠɪᴅᴇꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ᴡᴇʙꜱᴇʀɪᴇꜱ ɪɴꜱɪᴅᴇ ᴀ ɢʀᴏᴜᴘ ᴏʀ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴏɴ ᴘᴇʀꜱᴏɴᴀʟ ɪɴᴛᴇʀᴀᴄᴛɪᴏɴꜱ.</blockquote>\n\n<blockquote>ᴛᴏ ᴇɴᴊᴏʏ ᴍʏ ꜰᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ, ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ(ꜱ) ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴇᴠᴇʀʏ ʀɪɢʜᴛ.</b></blockquote>
 
 <b><spoiler>🔋 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ - <a href=https://t.me/infohub_updates>ɪɴꜰᴏʜᴜʙ ᴜᴘᴅᴀᴛᴇꜱ</b></spoiler></a>"""
     
@@ -22,7 +21,7 @@ class script(object):
     
     
     REFFER_TXT = """
-<b>ʀᴇғᴇʀ ᴛʜɪꜱ ʙᴏᴛᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs ᴀɴᴅ ғᴀᴍɪʟʏ, ᴀɴᴅ ᴄᴏʟʟᴇᴄᴛ 50 ᴘᴏɪɴᴛꜱ
+<b>ʀᴇғᴇʀ ᴛʜɪꜱ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs ᴀɴᴅ ғᴀᴍɪʟʏ, ᴀɴᴅ ᴄᴏʟʟᴇᴄᴛ 50 ᴘᴏɪɴᴛꜱ
 
 🎀 ɴᴏᴛᴇ: ᴇᴀᴄʜ ʀᴇꜰᴇʀ ᴄᴀʀʀɪᴇꜱ 10 ᴘᴏɪɴᴛꜱ!
 
@@ -142,13 +141,7 @@ ____________________________
 ‣ ʜᴏsᴛᴇᴅ ᴏɴ  : <a href=https://www.heroku.com/>ʜᴇʀᴏᴋᴜ</a>
 ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ4.2 [sᴛᴀʙʟᴇ]</b>"""
 
-    FEATURES = """💥 ʟɪꜱᴛ ᴏꜰ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ꜰᴇᴀᴛᴜʀᴇꜱ 💥
-    
-‣ /telegraph - Sᴇɴᴅ Mᴇ Pʜᴏᴛᴏ Oʀ Vɪᴅᴇᴏ Uɴᴅᴇʀ(5ᴍʙ) Aɴᴅ Rᴇᴘʟʏ Wɪᴛʜ Cᴏᴍᴍᴀᴍɴᴅ [ɴᴏɴ-ꜰᴜɴᴄᴛɪᴏɴᴀʟ ꜱɪɴᴄᴇ https://t.me/durov/343 ᴅʀᴏᴘᴘᴇᴅ]
-
-‣ /font - ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴍᴏᴅᴇ ᴛᴏ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ꜰᴏɴᴛs sᴛʏʟᴇ
-
-ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ ᴡɪʟʟ ʙᴇ ᴀᴅᴅᴇᴅ ᴡɪᴛʜ ꜰᴜᴛᴜʀᴇ ᴜᴘᴅᴀᴛᴇꜱ ⌛"""
+    FEATURES = """☎️ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴜꜱᴇ @infohubsupport_robot ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ᴀᴅᴍɪɴꜱ ᴀɴᴅ ᴍᴏᴅᴇʀᴀᴛᴏʀꜱ ᴅɪʀᴇᴄᴛʟʏ!"""
 
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
@@ -250,24 +243,21 @@ Money heist S0E01
 </b>"""
 
     DISCLAIMER_TXT = """
-<b>𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 (@webseries_robot) is an auto-filter bot designed to index and share publicly available files on the internet. Our mission is to make these files easier to find, view, download, and stream on Telegram. This bot does not create or hold exclusive copyright over any shared files and simply provides convenient access to what is already available online.
+ᴘʟᴇᴀꜱᴇ ᴛᴀᴋᴇ ᴀ ᴍᴏᴍᴇɴᴛ ᴛᴏ ʀᴇᴠɪᴇᴡ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ᴀʀᴛɪᴄʟᴇ ʙᴇꜰᴏʀᴇ ᴄᴏɴᴛɪɴᴜɪɴɢ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ.
 
-We strongly discourage the misuse of this bot for unethical or unlawful purposes. 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 stands against piracy and respects the rights of content creators. If anyone believes their copyright or intellectual property rights have been violated, please contact us via @infohubsupport_robot on Telegram with verified proof of ownership. Upon confirmation, we will promptly remove any infringing content.
+⚠️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ - https://telegra.ph/Disclaimer-for-The-Devils-Theatre-11-23
 
-Our official group, 22nd Century Cinemas, provides a secure, transparent environment for users. While the bot may be added to other groups, we disclaim any responsibility for how it is used outside of our official channels. For a safer experience, we encourage users to join our official group.
-
-Users who add the bot to their groups must give the bot every one of the admin rights and use the /settings command to configure the bot inside their group according to their preferences.
-
-By using 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 to request any file, users acknowledge and agree to the terms above. 
+⌛ ʙʏ ᴘʀᴏᴄᴇᴇᴅɪɴɢ, ʏᴏᴜ ᴀᴄᴋɴᴏᴡʟᴇᴅɢᴇ ᴀɴᴅ ᴀɢʀᴇᴇ ᴛᴏ ᴛʜᴇ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ꜱᴇᴛ ꜰᴏʀᴛʜ ʙʏ ᴛʜᴇ ᴀᴅᴍɪɴꜱ. 
 
 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href=https://t.me/infohub_updates>ɪɴꜰᴏʜᴜʙ ᴜᴘᴅᴀᴛᴇꜱ</a>"""
 
     USERS_TXT = """
-👇 ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ғᴏʀ ᴜꜱᴇʀꜱ 👇
+👇 ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ғᴏʀ ʙᴏᴛ ᴜꜱᴇʀꜱ 👇
     
 • /id - ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.
 • /info  - ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.
 • /imdb  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.
+• /font - ᴄʜᴀɴɢᴇ ᴛʜᴇ ꜰᴏɴᴛ ᴏꜰ ᴀ ᴛᴇxᴛ 
 • /search  - ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.
 • /request - sᴇɴᴅ ᴀ Mᴏᴠɪᴇ/Sᴇʀɪᴇs ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ ʙᴏᴛ ᴀᴅᴍɪɴs. 
 • /plans - ᴄʜᴇᴄᴋ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ ᴘʟᴀɴꜱ.
@@ -277,7 +267,7 @@ By using 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 to 
 """
 
     GROUP_TXT = """
-👇 ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ꜰᴏʀ ɢʀᴏᴜᴘ 👇
+👇 ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ꜰᴏʀ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴꜱ 👇
     
 • /connect  - ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ.
 • /disconnect  - ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ.
@@ -366,7 +356,7 @@ By using 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 to 
     UPI_TXT = """<b>   
 ⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
 
-💵 ᴜᴘɪ ɪᴅ - <code>JEETUBIND@paytm</code>
+💵 ᴜᴘɪ ɪᴅ - <code>rajsom8877@okaxis</code>
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
 
@@ -386,7 +376,7 @@ By using 𝕿𝖍𝖊 𝕯𝖊𝖛𝖎𝖑'𝖘 𝕿𝖍𝖊𝖆𝖙𝖗𝖊 to 
 
 🎉 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʀᴀɪʟ ꜰᴏʀ <u>5 ᴍɪɴᴜᴛᴇs 
 
-sᴇᴀʀᴄʜ🔍 ᴍᴏᴠɪᴇ ᴀɢᴀɪɴ</u></b>"""
+sᴇᴀʀᴄʜ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ᴀɢᴀɪɴ 🥰</u></b>"""
     
     
     NOT_AVAILABLE_TXT = """{}
