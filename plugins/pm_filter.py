@@ -1323,7 +1323,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✪ ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
+                    InlineKeyboardButton('🛠️ ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
                     InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', callback_data='features')
                 ],[
                     InlineKeyboardButton('🍀 Hᴇʟᴘ', callback_data='help'),
@@ -1391,7 +1391,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]]
             reply_markup = InlineKeyboardMarkup(safari)
             await client.send_message(int(user_id), script.NOT_AVAILABLE_TXT.format(movie),parse_mode=enums.ParseMode.HTML)
-            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ Sᴇɴᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ 😒.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
+            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ SᴇɴT Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ 😒.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
         except Exception as e:
             print(e)
             await query.answer(f"{e}", show_alert=True)
