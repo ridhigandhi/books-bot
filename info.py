@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', "21145186"))
 API_HASH = environ.get('API_HASH', "daa53f4216112ad22b8a8f6299936a46")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7457680560:AAFTw0OJHjluEmFdJaVaUPDyHcjriTD4mGk")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7296278954:AAHNxCI6oCoJ3EREVauXpulxU5CyMhgY4Mg")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
@@ -30,9 +30,9 @@ PICS = (environ.get('PICS', 'https://envs.sh/w75.jpg https://envs.sh/w7L.jpg htt
 WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 
 #premium imag
-REFFER_PIC = environ.get('REFFER_PIC', 'https://graph.org/file/f75feb19aece0d4badefd.jpg')
-PREMIUM_PIC = environ.get('SUBSCRIPTION', 'https://i.imghippo.com/files/wPdPK1726559453.jpg')
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/8bc2cc53e47180bc78c10.jpg') # Scanner Code image 
+REFFER_PIC = environ.get('REFFER_PIC', 'https://envs.sh/KH7.jpg')
+PREMIUM_PIC = environ.get('SUBSCRIPTION', 'https://envs.sh/KH8.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wLE.jpg') # Scanner Code image 
 #refer time, or feffer count
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "50")) # Set Referel point Count 
@@ -93,7 +93,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/theultimatetheatre')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/infohub_updates')
-MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
+MSG_ALRT = environ.get('MSG_ALRT', '🏴‍☠️ ᴀʏᴇ, ᴀʏᴇ ᴄᴀᴘᴛᴀɪɴ!!')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002310300801))
 GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002310300801)) # Group verify stats 
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002310300801)) # movies request channel, else log channel
