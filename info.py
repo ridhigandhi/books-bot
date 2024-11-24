@@ -3,7 +3,8 @@
 import re
 import os
 from os import environ, getenv
-from Script import script 
+from Script import script
+from time import time
 
 id_pattern = re.compile(r'^.\d+$')
 
@@ -24,6 +25,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7457680560:AAHfNbbdWqUBxyE52sFZNeWh-boi6fw
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
+BOT_START_TIME = time()
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
 PICS = (environ.get('PICS', 'https://envs.sh/w75.jpg https://envs.sh/w7L.jpg https://envs.sh/wZg.jpg https://envs.sh/wZH.jpg https://envs.sh/w7c.jpg https://envs.sh/w7j.jpg https://envs.sh/w7Z.jpg')).split()
