@@ -30,4 +30,3 @@ colorama
 fuzzywuzzy
 python-Levenshtein
 googletrans==4.0.0-rc1
-psutil=5.9.4
