@@ -41,7 +41,7 @@ async def save_group(bot, message):
         
         
         await message.reply_text(
-            text=f"<b>ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {message.chat.title} ɢʀᴏᴜᴘ ❣️\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴀ ᴍᴏᴠɪᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ,\n\nᴛʜᴇɴ ғɪʀsᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ.\n\nᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ /verify ᴄᴏᴍᴍᴀɴᴅ..</b>"
+            text=f"<b>ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {message.chat.title} ɢʀᴏᴜᴘ ❣️\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴀ ᴍᴏᴠɪᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ,\n\nᴛʜᴇɴ ғɪʀsᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ.\n\nᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ /verify ᴄᴏᴍᴍᴀɴᴅ! ⌛</b>"
             )
     else:
         settings = await get_settings(message.chat.id)
@@ -82,7 +82,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i am going! If you wanna add me again contact my support.</b>',
             reply_markup=reply_markup,
         )
 
@@ -121,7 +121,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i am going! If you wanna add me again contact my support.</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -172,7 +172,7 @@ async def gen_invite(bot, message):
     try:
         link = await bot.create_chat_invite_link(chat)
     except ChatAdminRequired:
-        return await message.reply("Invite Link Generation Failed, Iam Not Having Sufficient Rights")
+        return await message.reply("Invite Link Generation Failed, I am Not Having Sufficient Rights")
     except Exception as e:
         return await message.reply(f'Error {e}')
     await message.reply(f'Here is your Invite Link {link.invite_link}')
