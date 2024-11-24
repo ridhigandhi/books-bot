@@ -67,7 +67,9 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton('🆓 ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"), 
                         InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
-                    ]]
+                    ],[
+                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_bot')
+            ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgIAAxkBAAIBr2dDI0XOnpPn62EjCB1U9pGIidx0AAJ8EgAC8ZgxS6cvrXhhVMIIHgQ") 
             await asyncio.sleep(2)
@@ -92,7 +94,9 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton('🆓 ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"), 
                         InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
-                    ]]
+                    ],[
+                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_bot')
+            ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgIAAxkBAAIBr2dDI0XOnpPn62EjCB1U9pGIidx0AAJ8EgAC8ZgxS6cvrXhhVMIIHgQ") 
             await asyncio.sleep(2)
