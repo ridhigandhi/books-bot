@@ -54,20 +54,20 @@ async def stream_download(bot, query):
         non_online = await stream_site(online, grp_id)
         non_download = await stream_site(download, grp_id)
         if not await db.has_premium_access(user_id) and settings.get('stream_mode', STREAM_MODE):
-            await msg.reply_text(text=f"tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} STREAM MODE ON",
+            await msg.reply_text(text=f"ᴜꜱᴇʀ ʟɪɴᴋ: tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nꜱᴛʀᴇᴀᴍ ᴍᴏᴅᴇ ᴏɴ",
                 reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
                         InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)]]))
-            await query.answer("𝐍𝐨𝐭𝐞:\n𝐓𝐡𝐞 𝐀𝐝𝐬-𝐅𝐫𝐞𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫𝐬\n\n‼️Tᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴀᴋ ʙᴇʟᴏᴡ..!!!", show_alert=True)
+            await query.answer("🎀 ɴᴏᴛᴇ:\nᴛʜᴇ ᴀᴅꜱ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ ʜᴀꜱ ʙᴇᴇɴ ʀᴇꜱᴇʀᴠᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ᴇxᴄʟᴜꜱɪᴠᴇʟʏ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ!", show_alert=True)
             await query.edit_message_reply_markup(
                 reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
                         InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)
                     ],[
-                        InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=STREAM_HTO)]]))
+                        InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url=STREAM_HTO)]]))
             return
         else:
-            await msg.reply_text(text=f"tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} SHORT MODE OFF",
+            await msg.reply_text(text=f"ᴜꜱᴇʀ ʟɪɴᴋ: tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nꜱᴛʀᴇᴀᴍ ᴍᴏᴅᴇ ᴏꜰꜰ",
                 reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
                         InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=online)]]))
@@ -86,13 +86,13 @@ async def reply_stream(client, message):
     user_id = message.from_user.id
     user_name =  message.from_user.mention 
     if not reply_message or not (reply_message.document or reply_message.video):
-        return await message.reply_text("**Reply to a video or document file.**")
+        return await message.reply_text("**Reply to a video or document.**")
 
     file_id = reply_message.document or reply_message.video
 
     try:
         msg = await reply_message.forward(chat_id=BIN_CHANNEL)
-        await client.send_message(text=f"<b>Streaming Link Gernated By </b>:{message.from_user.mention}  <code>{message.from_user.id}</code> 👁️✅",
+        await client.send_message(text=f"<b>ꜱᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋ ʜᴀꜱ ʙᴇᴇɴ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ </b>:{message.from_user.mention}  <code>{message.from_user.id}</code> 👁️✅",
                   chat_id=BIN_CHANNEL,
                   disable_web_page_preview=True)
     except Exception as e:
@@ -106,13 +106,13 @@ async def reply_stream(client, message):
     file_name = file_id.file_name.replace("_", " ").replace(".mp4", "").replace(".mkv", "").replace(".", " ")
     if not await db.has_premium_access(user_id) and STREAM_MODE == True:  
         await message.reply_text(
-            text=f"<b>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !\n\n📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <a href={CHNL_LNK}>{file_name}</a>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ : {non_download}\n\n🖥WATCH  : {non_online}\n\n⚠️ Tʜᴇ ʟɪɴᴋ ᴡɪʟʟ ɴᴏᴛ ᴇxᴘɪʀᴇ ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ꜱᴇʀᴠᴇʀ ɪꜱ ᴄʜᴀɴɢᴇᴅ. 🔋\n\n𝐍𝐨𝐭𝐞:\n𝐓𝐡𝐞 𝐀𝐝𝐬-𝐅𝐫𝐞𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫𝐬\n\n‼️Tᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴀᴋ ʙᴇʟᴏᴡ..!!!</b>",
+            text=f"<b>ʏᴏᴜʀ ʟɪɴᴋ ʜᴀꜱ ʙᴇᴇɴ ɢᴇɴᴇʀᴀᴛᴇᴅ !\n\n📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <a href={CHNL_LNK}>{file_name}</a>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ : {non_download}\n\n🖥WATCH  : {non_online}\n\n⚠️ Tʜᴇ ʟɪɴᴋ ᴡɪʟʟ ɴᴏᴛ ᴇxᴘɪʀᴇ ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ꜱᴇʀᴠᴇʀ ɪꜱ ᴄʜᴀɴɢᴇᴅ. 🔋\n\n🎀 ɴᴏᴛᴇ:\nᴛʜᴇ ᴀᴅꜱ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ ʜᴀꜱ ʙᴇᴇɴ ʀᴇꜱᴇʀᴠᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ᴇxᴄʟᴜꜱɪᴠᴇʟʏ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ!</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[
                   InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
                   InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)
                   ],[
-                  InlineKeyboardButton('🔒 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🔒', url=STREAMHTO)
+                  InlineKeyboardButton('🔒 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔒', url=STREAMHTO)
                 ],[
                  InlineKeyboardButton('✨ ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                 ]]),
@@ -138,9 +138,9 @@ async def pm_text(bot, message):
     if await db.get_setting("PM_FILTER", default=PM_FILTER) or await db.has_premium_access(message.from_user.id):
         await auto_filter(bot, message)
     else:
-        await message.reply_text("<b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴀ ᴍᴏᴠɪᴇ ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴘᴀʏ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ ᴛʜᴇ ʙᴏᴛ, ᴏᴛʜᴇʀᴡɪsᴇ ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ\n\nयदि आप बॉट से मूवी लेना चाहते हैं तो आपको बॉट का प्रीमियम लेना होगा\n\n 💸20 Rs Monthly ⏱️\n\nअन्यथा आप ग्रुप से मूवी ले सकते हैं.</b>", reply_markup=InlineKeyboardMarkup([
+        await message.reply_text("<b>ɪꜰ ʏᴏᴜ ᴡɪꜱʜ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴘᴍ, ʏᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ. ʜᴏᴡᴇᴠᴇʀ, ʏᴏᴜ ᴄᴀɴ ꜱᴛɪʟʟ ɢᴇᴛ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ ɪ'ᴍ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ\n\nयदि आप बॉट से मूवी लेना चाहते हैं तो आपको बॉट का प्रीमियम लेना होगा\n\n 💸20 Rs Monthly ⏱️\n\nअन्यथा आप ग्रुप से मूवी ले सकते हैं.</b>", reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("Gʀᴏᴜᴘ Hᴇʀᴇ", url=GRP_LNK)],
-            [InlineKeyboardButton('✨Bʏ Pʀᴇᴍɪᴜᴍ: Sᴇᴀʀᴄʜ Pᴍ 🔍 🚫✨', callback_data=f'premium_info')]]))
+            [InlineKeyboardButton('✨ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ: ᴜɴʟᴏᴄᴋ ᴘᴍ ꜱᴇᴀʀᴄʜ✨', callback_data=f'premium_info')]]))
 
 
 
@@ -164,12 +164,12 @@ async def give_filter(bot, message):
             if owner:
                 await message.reply_text(text=f"Tʜɪs Gʀᴏᴜᴘ ɪs Nᴏᴛ Vᴇʀɪғɪᴇᴅ. Pʟᴇᴀsᴇ Usᴇ Tʜɪs /verify Cᴏᴍᴍᴀɴᴅ ᴛᴏ Vᴇʀɪғʏ Tʜᴇ Gʀᴏᴜᴘ.")
             else:
-                await message.reply_text(text=f" I Cᴀɴɴᴏᴛ Gɪᴠᴇ Mᴏᴠɪᴇs ɪɴ Tʜɪs Gʀᴏᴜᴘ Bᴇᴄᴀᴜsᴇ Tʜɪs Gʀᴏᴜᴘ ɪs Nᴏᴛ Vᴇʀɪғɪᴇᴅ.")
+                await message.reply_text(text=f" I Cᴀɴɴᴏᴛ Gɪᴠᴇ Mᴏᴠɪᴇs ɪɴ Tʜɪs Gʀᴏᴜᴘ ꜱɪɴᴄᴇ Tʜɪs Gʀᴏᴜᴘ ɪs Nᴏᴛ Vᴇʀɪғɪᴇᴅ.")
     else:
         if owner:
             await message.reply_text(text=f"ʏᴏᴜʀ ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ ʀᴇᴊᴇᴄᴛᴇᴅ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴀᴅᴍɪɴ.\n@infohubsupport_robot")
         else:
-            await message.reply_text(text=f"ᴛʜɪs ɢʀᴏᴜᴘ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ")
+            await message.reply_text(text=f"ᴛʜɪs ɢʀᴏᴜᴘ ɪs ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ")
         
 
 
@@ -321,7 +321,7 @@ async def language_check(bot, query):
         if int(userid) not in [query.from_user.id, 0]:
             return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
         if language == "unknown":
-            return await query.answer("Sᴇʟᴇᴄᴛ ᴀɴʏ ʟᴀɴɢᴜᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs !", show_alert=True)
+            return await query.answer("Sᴇʟᴇᴄᴛ ᴀɴʏ ʟᴀɴɢᴜᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ!", show_alert=True)
         movie = temp.KEYWORD.get(query.from_user.id)
         if language != "home":
             movie = f"{movie} {language}"
@@ -403,7 +403,7 @@ async def language_check(bot, query):
                     pass
                 await query.answer()
         else:
-            return await query.answer(f"Sᴏʀʀʏ, Nᴏ ғɪʟᴇs ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
+            return await query.answer(f"Sᴏʀʀʏ ᴘᴏᴏᴋɪᴇ, Nᴏ ғɪʟᴇs ᴡᴇʀᴇ ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ <i>'{movie}'</i>.", show_alert=True)
     except Exception as e:
             await query.answer(f"error found out\n\n{e}", show_alert=True)
             return
@@ -532,7 +532,7 @@ async def quality_check(bot, query):
                     pass
                 await query.answer()
         else:
-            return await query.answer(f"Sᴏʀʀʏ, Nᴏ ғɪʟᴇs ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
+            return await query.answer(f"Sᴏʀʀʏ ᴘᴏᴏᴋɪᴇ, Nᴏ ғɪʟᴇs ᴡᴇʀᴇ ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
     except Exception as e:
             await query.answer(f"error found out\n\n{e}", show_alert=True)
             return
@@ -573,7 +573,7 @@ async def seasons_check(bot, query):
         if int(userid) not in [query.from_user.id, 0]:
             return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
         if seasons == "unknown":
-            return await query.answer("Sᴇʟᴇᴄᴛ ᴀɴʏ Sᴇᴀꜱᴏɴꜱ ғʀᴏᴍ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs !", show_alert=True)
+            return await query.answer("Sᴇʟᴇᴄᴛ ᴀɴʏ Sᴇᴀꜱᴏɴ ғʀᴏᴍ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ !", show_alert=True)
         movie = temp.KEYWORD.get(query.from_user.id)
         if seasons != "home":
             movie = f"{movie} {seasons}"
@@ -654,7 +654,7 @@ async def seasons_check(bot, query):
                     pass
                 await query.answer()
         else:
-            return await query.answer(f"Sᴏʀʀʏ, Nᴏ ғɪʟᴇs ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
+            return await query.answer(f"Sᴏʀʀʏ ᴘᴏᴏᴋɪᴇ, Nᴏ ғɪʟᴇs ᴡᴇʀᴇ ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
     except Exception as e:
             await query.answer(f"error found out\n\n{e}", show_alert=True)
             return
@@ -666,7 +666,7 @@ async def select_seasons(bot, query):
     if int(userid) not in [query.from_user.id, 0]:
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     btn = [[
-        InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Sᴇᴀꜱᴏɴꜱ ↓", callback_data=f"seasons#{userid}#unknown")
+        InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Sᴇᴀꜱᴏɴ ↓", callback_data=f"seasons#{userid}#unknown")
     ],[
         InlineKeyboardButton("Sᴇᴀꜱᴏɴ 𝟷", callback_data=f"seasons#{userid}#s01"),
         InlineKeyboardButton("Sᴇᴀꜱᴏɴ 𝟸", callback_data=f"seasons#{userid}#s02")
@@ -702,7 +702,7 @@ async def episode_check(bot, query):
         if int(userid) not in [query.from_user.id, 0]:
             return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
         if episode == "unknown":
-            return await query.answer("Sᴇʟᴇᴄᴛ ᴀɴʏ ᴇᴘ ғʀᴏᴍ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs !", show_alert=True)
+            return await query.answer("Sᴇʟᴇᴄᴛ ᴀɴʏ ᴇᴘɪꜱᴏᴅᴇ ғʀᴏᴍ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ !", show_alert=True)
         movie = temp.KEYWORD.get(query.from_user.id)
         if episode != "home":
             movie = f"{movie} {episode}"
@@ -783,7 +783,7 @@ async def episode_check(bot, query):
                     pass
                 await query.answer()
         else:
-            return await query.answer(f"Sᴏʀʀʏ, Nᴏ ғɪʟᴇs ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
+            return await query.answer(f"Sᴏʀʀʏ ᴘᴏᴏᴋɪᴇ, Nᴏ ғɪʟᴇs ᴡᴇʀᴇ ғᴏᴜɴᴅ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {movie}.", show_alert=True)
     except Exception as e:
             await query.answer(f"error found out\n\n{e}", show_alert=True)
             return
@@ -794,7 +794,7 @@ async def select_episode2(bot, query):
     if int(userid) not in [query.from_user.id, 0]:
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     btn = [[
-        InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Eᴘɪsᴏᴅᴇs ↓", callback_data=f"episode#{userid}#unknown")
+        InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Eᴘɪsᴏᴅᴇ ↓", callback_data=f"episode#{userid}#unknown")
     ],[
          InlineKeyboardButton("ᴇᴘ 𝟷𝟼", callback_data=f"episode#{userid}#e16"),
         InlineKeyboardButton("ᴇᴘ 𝟷𝟽", callback_data=f"episode#{userid}#e17"), 
@@ -831,7 +831,7 @@ async def select_episode(bot, query):
     if int(userid) not in [query.from_user.id, 0]:
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     btn = [[
-        InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Eᴘɪsᴏᴅᴇs ↓", callback_data=f"episode#{userid}#unknown")
+        InlineKeyboardButton("Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇꜱɪʀᴇᴅ Eᴘɪsᴏᴅᴇ ↓", callback_data=f"episode#{userid}#unknown")
     ],[
         InlineKeyboardButton("ᴇᴘ 𝟷", callback_data=f"episode#{userid}#e01"),
         InlineKeyboardButton("ᴇᴘ 𝟸", callback_data=f"episode#{userid}#e02"), 
@@ -1014,7 +1014,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if delcon:
             await query.message.edit_text(
-                "Sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴄᴏɴɴᴇᴄᴛɪᴏɴ !"
+                "ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴅᴇʟᴇᴛᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ!"
             )
         else:
             await query.message.edit_text(
@@ -1082,7 +1082,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=allfiles_{query.message.chat.id}_{key}")
             return
         except UserIsBlocked:
-            await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
+            await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀɴ !', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=sendfiles3_{key}")
         except Exception as e:
@@ -1224,7 +1224,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_text(
-                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
+                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As ᴘᴇʀ Yᴏᴜʀ Wɪsʜ ⚙</b>",
                 disable_web_page_preview=True,
                 parse_mode=enums.ParseMode.HTML
             )
@@ -1313,7 +1313,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(buttons)
             await client.send_message(
                 chat_id=userid,
-                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
+                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As ᴘᴇʀ Yᴏᴜʀ Wɪsʜ ⚙</b>",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True,
                 parse_mode=enums.ParseMode.HTML,
@@ -1406,7 +1406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]]
             reply_markup = InlineKeyboardMarkup(safari)
             await client.send_message(int(user_id), script.UPLOADED_TXT.format(movie),parse_mode=enums.ParseMode.HTML)
-            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ Sᴇɴᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Uᴘʟᴏᴀᴅᴇᴅ 🎊.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
+            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ SᴇɴT Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Uᴘʟᴏᴀᴅᴇᴅ 🎊.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
         except Exception as e:
             print(e)
             await query.answer(f"{e}", show_alert=True)
@@ -1419,7 +1419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]]
             reply_markup = InlineKeyboardMarkup(safari)
             await client.send_message(int(user_id), script.NOT_RELEASE_TXT.format(movie),parse_mode=enums.ParseMode.HTML)
-            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ Sᴇɴᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : ɴᴏᴛ ʀᴇʟᴇᴀsᴇ 🙅.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
+            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ SᴇɴT Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : ɴᴏᴛ ʀᴇʟᴇᴀsᴇᴅ 🙅.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
         except Exception as e:
             print(e)
             await query.answer(f"{e}", show_alert=True)
@@ -1432,7 +1432,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]]
             reply_markup = InlineKeyboardMarkup(safari)
             await client.send_message(int(user_id), script.SPELL_TXT.format(movie),parse_mode=enums.ParseMode.HTML)
-            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ Sᴇɴᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Sᴘᴇʟʟɪɴɢ Eʀʀᴏʀ 🕵️.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
+            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ SᴇɴT Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Sᴘᴇʟʟɪɴɢ Eʀʀᴏʀ 🕵️.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
         except Exception as e:
             print(e)
             await query.answer(f"{e}", show_alert=True)
@@ -1445,7 +1445,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]]
             reply_markup = InlineKeyboardMarkup(safari)
             await client.send_message(int(user_id), script.SERIES_FORMAT_TXT.format(movie),parse_mode=enums.ParseMode.HTML)
-            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ Sᴇɴᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Sᴇʀɪᴇs Eʀʀᴏʀ 🕵️.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
+            msg=await query.edit_message_text(text=f"Mᴇꜱꜱᴀɢᴇ SᴇɴT Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ ✅\n\n⏳ꜱᴛᴀᴛᴜꜱ : Sᴇʀɪᴇs Eʀʀᴏʀ 🕵️.\n🪪ᴜꜱᴇʀɪᴅ : `{user_id}`\n🎞ᴄᴏɴᴛᴇɴᴛ : `{movie}`", reply_markup=InlineKeyboardMarkup(safari))
         except Exception as e:
             print(e) 
             await query.answer(f"{e}", show_alert=True)
@@ -1782,8 +1782,8 @@ async def auto_filter(client, msg, spoll=False):
                 return
             if len(message.text) < 100:
                 search = message.text
-                m=await message.reply_sticker(sticker="CAACAgIAAxkBAAEVugJljpdfkszexOUZu8hPjuPKty8ZmAACdxgAAqPjKEmMVSFmXGLogR4E",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🅿︎🅻︎🅴︎🅰︎🆂︎🅴︎  🆆︎🅰︎🅸︎🆃︎", url=CHNL_LNK)]]))
+                m=await message.reply_sticker(sticker="CAACAgUAAxkBAAIFnGdEvhhXklJHOeZAEiOas7jkeNjeAALdCgACiVdhVxmB0t2QzTKsHgQ",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ⓌⒶⒾⓉ ⓅⓄⓄⓀⒾⒺ", url=CHNL_LNK)]]))
                 search = search.lower()
                 find = search.split(" ")
                 search = ""
@@ -1802,7 +1802,7 @@ async def auto_filter(client, msg, spoll=False):
                 if not files:
                     await m.delete()
                     if settings["spell_check"]:
-                        ai_sts = await message.reply_sticker(sticker=f"CAACAgQAAxkBAAEq2R9mipkiW9ACyj7oQXznwKTPHqNCXQACkBUAA3mRUZGx4GwLX9XCHgQ")
+                        ai_sts = await message.reply_sticker(sticker=f"CAACAgQAAxkBAAIFrWdEvvayqcqFnmnE9I854Zq0QO-UAAIWGQACBz0IUfk3O8NjyDd_HgQ")
                         st=await message.reply('<b>Ai is Cheking For Your Spelling. Please Wait.</b>') 
                         is_misspelled = await ai_spell_check(chat_id = message.chat.id,wrong_name=search)
                         if is_misspelled:
@@ -1822,8 +1822,8 @@ async def auto_filter(client, msg, spoll=False):
         else:
             message = msg.message.reply_to_message  # msg will be callback query
             search, files, offset, total_results = spoll
-            m=await message.reply_sticker(sticker="CAACAgIAAxkBAAEVugJljpdfkszexOUZu8hPjuPKty8ZmAACdxgAAqPjKEmMVSFmXGLogR4E",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🅿︎🅻︎🅴︎🅰︎🆂︎🅴︎  🆆︎🅰︎🅸︎🆃︎", url=CHNL_LNK)]]))
+            m=await message.reply_sticker(sticker="CAACAgUAAxkBAAIFnGdEvhhXklJHOeZAEiOas7jkeNjeAALdCgACiVdhVxmB0t2QzTKsHgQ",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ⓌⒶⒾⓉ ⓅⓄⓄⓀⒾⒺ", url=CHNL_LNK)]]))
             settings = await get_settings(message.chat.id)
         key = f"{message.chat.id}-{message.id}"
         temp.GETALL[key] = files
