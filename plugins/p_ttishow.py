@@ -82,7 +82,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i am going! If you wanna add me again contact my support.</b>',
+            text='<blockquote><b>ʜᴇʟʟᴏ, ᴘᴏᴏᴋɪᴇꜱ!</b></blockquote>\n\nᴛʜᴇʀᴇ ʜᴀꜱ ʙᴇᴇɴ ᴀ ʙɪᴛ ᴏꜰ ᴀɴ ɪꜱꜱᴜᴇ ᴛʜᴀᴛ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀꜱ ʙʀᴏᴜɢʜᴛ ᴜᴘ, ᴀɴᴅ ᴛʜᴇʏ ʜᴀᴠᴇ ᴀꜱᴋᴇᴅ ᴍᴇ ᴛᴏ ꜱᴛᴇᴘ ᴏᴜᴛ ᴏꜰ ᴛʜɪꜱ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴀᴜꜱᴇ ᴍʏ ᴡᴏʀᴋ ʜᴇʀᴇ.\n\nᴛʜɪꜱ ᴍᴏꜱᴛʟʏ ʜᴀᴘᴘᴇɴᴇᴅ ʙᴇᴄᴀᴜꜱᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴꜱ ʜᴀᴠᴇ ɴᴏᴛ ʙᴇᴇɴ ꜰᴏʟʟᴏᴡɪɴɢ ᴛʜᴇ ᴘʀᴏᴘᴇʀ ɪɴꜱᴛʀᴜᴄᴛɪᴏɴꜱ ᴏɴ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ.\n\nɪꜰ ʏᴏᴜ ᴛʜɪɴᴋ ᴛʜɪꜱ ᴅᴇᴄɪꜱɪᴏɴ ɪꜱ ᴀ ᴍɪꜱᴛᴀᴋᴇ ᴏʀ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇꜱᴛɪᴏɴꜱ, ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ʀᴇᴀᴄʜ ᴏᴜᴛ ᴛᴏ ꜱᴜᴘᴘᴏʀᴛ ᴀᴛ @infohubsupport_robot',
             reply_markup=reply_markup,
         )
 
