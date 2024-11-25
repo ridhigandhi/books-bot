@@ -65,7 +65,7 @@ async def generate_code_cmd(client, message):
         premium_duration_seconds = await parse_duration(duration_str)
         if premium_duration_seconds is not None:
             token = await generate_code(duration_str)
-            await message.reply_text(f"✅ ᴄᴏᴅᴇ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ♻️\n\n🔑 ᴄᴏᴅᴇ: `{token}`\n⌛ Vᴀʟɪᴅɪᴛʏ: {duration_str}\n\n𝐔𝐬𝐚𝐠𝐞 : <a href=https://t.me/c/2165249824/4>/redeem</a> xxxxxxxxxx\n\n𝐍𝐨𝐭𝐞 : Oɴʟʏ Oɴᴇ Usᴇʀ Cᴀɴ Usᴇ")
+            await message.reply_text(f"✅ ᴄᴏᴅᴇ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ♻️\n\n🔑 ᴄᴏᴅᴇ: `{token}`\n⌛ Vᴀʟɪᴅɪᴛʏ: {duration_str}\n\n𝐔𝐬𝐚𝐠𝐞 : <a href=https://t.me/c/2165249824/4>/redeem</a> xxxxxxxxxx\n\n𝐍𝐨𝐭𝐞 : ᴄᴏᴅᴇ ᴜꜱᴀɢᴇ ɪꜱ ʟɪᴍɪᴛᴇᴅ ᴛᴏ ᴀ ꜱɪɴɢʟᴇ ᴜꜱᴇʀ ᴏɴʟʏ")
                                        
         else:
             await message.reply_text("❌ ɪɴᴠᴀʟɪᴅ ᴅᴜʀᴀᴛɪᴏɴ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟɪᴅ ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴋᴇ '1minute', '1hours', '1days', '1months', etc.")
@@ -82,7 +82,7 @@ async def redeem_code_cmd(client, message):
             code_data = await db.codes.find_one({"code_hash": hash_code(code)})
             if code_data:
                 if code_data['used']:
-                    await message.reply_text(f"🚫 ᴛʜɪs ᴄᴏᴅᴇ ᴀʟʀᴇᴀᴅʏ ᴜsᴇᴅ 🚫.")
+                    await message.reply_text(f"🚫 ᴛʜɪs ᴄᴏᴅᴇ ʜᴀꜱ ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ᴜꜱᴇᴅ!! 🚫.")
                     return
                 premium_duration_seconds = await parse_duration(code_data['duration'])
                 if premium_duration_seconds is not None:
