@@ -78,7 +78,7 @@ async def rejected_group_callback(client, query):
         [[InlineKeyboardButton("Tᴀᴘ Tᴏ Vᴇʀɪғʏ ✅", callback_data=f"verify_group_{chat_id}")]]
     ))
     if owner_id:
-        await client.send_message(chat_id=owner_id, text=f"#𝐑𝐞𝐣𝐞𝐜𝐭_𝐆𝐫𝐨𝐮𝐩❌\n\nGʀᴏᴜᴘ Nᴀᴍᴇ: {group_title}\nIᴅ: {chat_id}\n\nʏᴏᴜʀ ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ ʀᴇᴊᴇᴄᴛᴇᴅ\n\n ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴀᴅᴍɪɴ: @Safaridev.")
+        await client.send_message(chat_id=owner_id, text=f"#𝐑𝐞𝐣𝐞𝐜𝐭_𝐆𝐫𝐨𝐮𝐩❌\n\nGʀᴏᴜᴘ Nᴀᴍᴇ: {group_title}\nIᴅ: {chat_id}\n\nʏᴏᴜʀ ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ ʀᴇᴊᴇᴄᴛᴇᴅ\n\nᴛʜɪꜱ ɪꜱ ᴘʀᴏʙᴀʙʟʏ ᴅᴜᴇ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ɴᴏᴛ ʜᴀᴠɪɴɢ ᴀʟʟ ᴛʜᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇꜱ.\n\nɪꜰ ʏᴏᴜ ᴡɪꜱʜ ᴛᴏ ᴀᴅᴅ ᴛʜɪꜱ ʙᴏᴛ ᴀɢᴀɪɴ, ʏᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ᴀɴ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀʟʟ ᴛʜᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇꜱ ᴛᴜʀɴᴇᴅ ᴏɴ!\n\nᴀꜱ ꜰᴏʀ ɴᴏᴡ, ᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ : @infohubsupport_robot")
 
 
 # Verify command to initiate the group verification
@@ -121,7 +121,7 @@ async def grpp_verify(bot, message):
             )
     else:
         if owner:
-            await message.reply_text(text=f" ʏᴏᴜʀ ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ ʀᴇᴊᴇᴄᴛᴇᴅ ʙʏ ᴍʏ ᴀᴅᴍɪɴ.\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ɢʀᴏᴜᴘ ᴠᴇʀɪғɪᴇᴅ ᴛʜᴇɴ contact ᴛʜᴇ ᴀᴅᴍɪɴ. @Safaridev.")
+            await message.reply_text(text=f" ʏᴏᴜʀ ɢʀᴏᴜᴘ ʜᴀꜱ ʙᴇᴇɴ ʀᴇᴊᴇᴄᴛᴇᴅ ʙʏ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀꜱ ᴀɴᴅ ᴀᴅᴍɪɴꜱ.\n\nᴛʜɪꜱ ʜᴀᴘᴘᴇɴꜱ ᴍᴏꜱᴛʟʏ ᴡʜᴇɴ ɪ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴀʟʟ ᴛʜᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇꜱ ᴛᴜʀɴᴇᴅ ᴏɴ.\n\nᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ ꜰᴏʀ ᴀ ꜱᴏʟᴜᴛɪᴏɴ - @infohubsupport_robot")
         else:
             await message.reply("ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs")
 
@@ -132,7 +132,7 @@ async def delete_all_groups_command(bot, message):
     all_groups = await db.get_all_groups()
     for group in all_groups:
         try:
-            await bot.send_message(group['id'], "The bot is now leaving this group as per the admin's command.")
+            await bot.send_message(group['id'], "The bot is now leaving this group as per the admin's instructions.")
             await bot.leave_chat(group['id'])
         except Exception as e:
             print(f"Failed to leave chat {group['id']}: {e}")
