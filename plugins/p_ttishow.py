@@ -41,7 +41,7 @@ async def save_group(bot, message):
         
         
         await message.reply_text(
-            text=f"<b>ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {message.chat.title} ɢʀᴏᴜᴘ ❣️\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴀ ᴍᴏᴠɪᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ,\n\nᴛʜᴇɴ ғɪʀsᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ.\n\nᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ /verify ᴄᴏᴍᴍᴀɴᴅ! ⌛</b>"
+            text=f"<b>ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {message.chat.title} ɢʀᴏᴜᴘ ❣️\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ,\n\nᴛʜᴇɴ ғɪʀsᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ.\n\nᴠᴇʀɪғʏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ /verify ᴄᴏᴍᴍᴀɴᴅ! ⌛</b>"
             )
     else:
         settings = await get_settings(message.chat.id)
@@ -69,7 +69,7 @@ async def save_group(bot, message):
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a chat id')
+        return await message.reply('ɢɪᴠᴇ ᴍᴇ ᴀ ᴄʜᴀᴛ ɪᴅ')
     chat = message.command[1]
     try:
         chat = int(chat)
@@ -121,7 +121,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i am going! If you wanna add me again contact my support.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nMy admin has asked me to leave this group so i need to get going! If you want to add me again contact my support on @infohubsupport_robot</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -196,7 +196,7 @@ async def ban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("This is an invalid user, make sure they have started me atleast.")
     except IndexError:
         return await message.reply("This might be a channel, make sure its a user.")
     except Exception as e:
@@ -229,7 +229,7 @@ async def unban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("This is an invalid user, make sure they have started me atleast.")
     except IndexError:
         return await message.reply("Thismight be a channel, make sure its a user.")
     except Exception as e:
