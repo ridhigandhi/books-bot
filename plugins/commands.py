@@ -42,7 +42,7 @@ async def start(client, message):
                       ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             await message.reply_text(
-                text="ᴏᴋ, ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴊᴜsᴛ sᴛᴀʀᴛ ᴍᴇ ᴘᴇʀꜱᴏɴᴀʟʟʏ ɪɴ ᴍʏ ᴅᴍꜱ", 
+                text="ᴏᴋ, ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ɪꜰ ʏᴏᴜ ᴊᴜsᴛ sᴛᴀʀᴛ ᴍᴇ ᴘᴇʀꜱᴏɴᴀʟʟʏ ɪɴ ᴍʏ ᴅᴍꜱ", 
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
@@ -137,7 +137,7 @@ async def start(client, message):
                 await message.reply_text("Invalid refer!")
                 return
             if user_id == message.from_user.id:
-                await message.reply_text("Hᴇʏ Dᴜᴅᴇ, Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ 🤣!\n\nsʜᴀʀᴇ ʟɪɴᴋ ʏᴏᴜʀ ғʀɪᴇɴᴅ ᴀɴᴅ ɢᴇᴛ 10 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛ ɪғ ʏᴏᴜ ᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪɴɢ 50 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀsʜɪᴘ.")
+                await message.reply_text("Hᴇʏ Dᴜᴅᴇ, Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ 🤣!\n\nsʜᴀʀᴇ ʟɪɴᴋ ᴡɪᴛʜ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴏʀ ꜰᴀᴍɪʟʏ ᴀɴᴅ ɢᴇᴛ 10 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs ꜰᴏʀ ᴇᴀᴄʜ ʀᴇꜰᴇʀʀᴀʟ.\n\nɪғ ʏᴏᴜ ᴄᴏʟʟᴇᴄᴛ 50 ʀᴇғᴇʀʀᴀʟ ᴘᴏɪɴᴛs, ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ 1 ᴍᴏɴᴛʜ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀsʜɪᴘ.")
                 return
             if sdb.is_user_in_list(message.from_user.id):
                 await message.reply_text("Yᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ɪɴᴠɪᴛᴇᴅ ❗")
@@ -149,16 +149,16 @@ async def start(client, message):
             sdb.add_user(message.from_user.id)
             fromuse = sdb.get_refer_points(user_id) + 10
             sdb.add_refer_points(user_id, fromuse)
-            await message.reply_text(f"You have been successfully invited by {uss.mention}!")
-            await client.send_message(user_id, f"𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘂𝗹𝗮𝘁𝗶𝗼𝗻𝘀! 𝗬𝗼𝘂 𝘄𝗼𝗻 𝟭𝟬 𝗥𝗲𝗳𝗲𝗿𝗿𝗮𝗹 𝗽𝗼𝗶𝗻𝘁 𝗯𝗲𝗰𝗮𝘂𝘀𝗲 𝗬𝗼𝘂 𝗵𝗮𝘃𝗲 𝗯𝗲𝗲𝗻 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗜𝗻𝘃𝗶𝘁𝗲𝗱 ☞{message.from_user.mention}!") 
+            await message.reply_text(f"ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ɪɴᴠɪᴛᴇᴅ ʙʏ {uss.mention}!")
+            await client.send_message(user_id, f"ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ ᴘᴏᴏᴋɪᴇ! ʏᴏᴜ ᴊᴜꜱᴛ ᴇᴀʀɴᴇᴅ 10 ʀᴇꜰᴇʀʀᴀʟ ᴘᴏɪɴᴛꜱ ᴀꜱ {message.from_user.mention} ᴊᴜꜱᴛ ᴄʟɪᴄᴋᴇᴅ ᴏɴ ʏᴏᴜʀ ʀᴇꜰᴇʀʀᴀʟ ʟɪɴᴋ ᴛᴏ ꜱᴛᴀʀᴛ ᴍᴇ!") 
             if fromuse == REFFER_POINT:
                 await db.give_referal(user_id)
                 sdb.add_refer_points(user_id, 0) 
                 await client.send_message(chat_id=user_id,
-                    text=f"<b>Hᴇʏ {uss.mention}\n\nYᴏᴜ ɢᴏᴛ 1 ᴍᴏɴᴛʜ ᴘʀᴇᴍɪᴜᴍ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʙʏ ɪɴᴠɪᴛɪɴɢ 5 ᴜsᴇʀs ❗", disable_web_page_preview=True              
+                    text=f"<b>Hᴇʏ {uss.mention}\n\nYᴏᴜ ɢᴏᴛ 1 ᴍᴏɴᴛʜ ᴘʀᴇᴍɪᴜᴍ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ 5 ᴜsᴇʀs ❗", disable_web_page_preview=True              
                     )
                 for admin in ADMINS:
-                    await client.send_message(chat_id=admin, text=f"Sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴀsᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙʏ ᴛʜɪs ᴜsᴇʀ:\n\nuser Nᴀᴍᴇ: {uss.mention}\n\nUsᴇʀ ɪᴅ: {uss.id}!")	
+                    await client.send_message(chat_id=admin, text=f"ᴛᴀꜱᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʙʏ ᴛʜɪꜱ ᴜꜱᴇʀ ʜᴇʀᴇ:\n\nᴜꜱᴇʀ ɴᴀᴍᴇ: {uss.mention}\n\nᴜꜱᴇʀ ɪᴅ: {uss.id}!")	
                 return
         safari = message
         user_id = safari.from_user.id  
@@ -170,7 +170,7 @@ async def start(client, message):
                 settings = await get_settings(grp_id)         
                 verify_id_info = await db.get_verify_id_info(user_id, verify_id)
                 if not verify_id_info or verify_id_info["verified"]:
-                    await message.reply("<b>ʟɪɴᴋ ᴇxᴘɪʀᴇᴅ ᴛʀʏ ᴀɢᴀɪɴ...</b>")
+                    await message.reply("<b>ʟɪɴᴋ ʜᴀꜱ ᴇxᴘɪʀᴇᴅ, ᴘᴏᴏᴋɪᴇ! ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ ⌛</b>")
                     return
                 
                 ist_timezone = pytz.timezone('Asia/Kolkata')
@@ -220,7 +220,7 @@ async def start(client, message):
                 try:
                     invite_link = await client.create_chat_invite_link(int(AUTH_REQ_CHANNEL), creates_join_request=True)
                 except ChatAdminRequired:
-                    logger.error("Make sure Bot is admin in Forcesub channel")
+                    logger.error("ᴍᴀᴋᴇ ꜱᴜʀᴇ ʙᴏᴛ ɪꜱ ᴀᴅᴍɪɴ ɪɴ ꜰᴏʀᴄᴇꜱᴜʙ ᴄʜᴀɴɴᴇʟ")
                     return
                 btn = [[
                     InlineKeyboardButton("⛔️ ᴊᴏɪɴ ɴᴏᴡ ⛔️", url=invite_link.invite_link)
@@ -309,7 +309,7 @@ async def start(client, message):
         if data and data.startswith("allfiles"):
             files = temp.GETALL.get(file_id)
             if not files:
-                return await message.reply('<b><i>Nᴏ Sᴜᴄʜ Fɪʟᴇ ᴇxɪsᴛ.</b></i>')
+                return await message.reply('<b><i>ɴᴏ ꜱᴜᴄʜ ꜰɪʟᴇ ᴇxɪꜱᴛꜱ.</b></i>')
             filesarr = []
             for file in files:
                 file_id = file.file_id
@@ -348,11 +348,11 @@ async def start(client, message):
                 )
                 filesarr.append(msg)
             if await db.get_setting("AUTO_FILE_DELETE", default=AUTO_FILE_DELETE):
-                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
+                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️ʀᴇᴍɪɴᴅᴇʀ❗️️❗️❗️</u></b>\n\nᴛʜᴇ ꜰɪʟᴇꜱ ꜱʜᴀʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ<b><u>10 mins</u> 🫥 <i></b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ)</i>.\n\n<b><i>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ᴛᴏ ʏᴏᴜʀ ꜱᴀᴠᴇᴅ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇᴍ ᴛʜᴇʀᴇ</i></b>")
                 await asyncio.sleep(900)
                 for x in filesarr:
                     await x.delete()
-                await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+                await k.edit_text("<b>ᴀʟʟ ᴛʜᴇ ꜱᴇɴᴛ ꜰɪʟᴇꜱ ʜᴀᴠᴇ ʙᴇᴇɴ ᴅᴇʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!!</b>")
             return
         files_ = await get_file_details(file_id)           
         if not files_:
@@ -395,7 +395,7 @@ async def start(client, message):
                 return
             except:
                 pass
-            return await message.reply('Nᴏ sᴜᴄʜ ғɪʟᴇ ᴇxɪsᴛ.')
+            return await message.reply('Nᴏ sᴜᴄʜ ғɪʟᴇ ᴇxɪꜱᴛꜱ.')
         
         files = files_[0]
         settings = await get_settings(int(grp_id))
@@ -434,7 +434,7 @@ async def start(client, message):
             safari = msg
             await asyncio.sleep(900)
             await safari.delete() 
-            await del_msg.edit_text("<b>ʏᴏᴜʀ ғɪʟᴇ ᴡᴀs ᴅᴇʟᴇᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴀғᴛᴇʀ 10 ᴍɪɴᴜᴛᴇs ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ 📢</b>")
+            await del_msg.edit_text("<b>ᴀʟʟ ᴛʜᴇ ꜱᴇɴᴛ ꜰɪʟᴇꜱ ʜᴀᴠᴇ ʙᴇᴇɴ ᴅᴇʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ 📢</b>")
     except Exception as e:
         await message.reply(f"{e}")
         
@@ -447,7 +447,7 @@ async def channel_info(bot, message):
     elif isinstance(CHANNELS, list):
         channels = CHANNELS
     else:
-        raise ValueError("Uɴᴇxᴘᴇᴄᴛᴇᴅ ᴛʏᴘᴇ ᴏғ CHANNELS")
+        raise ValueError("Uɴᴇxᴘᴇᴄᴛᴇᴅ ᴛʏᴘᴇ ᴏғ ᴄʜᴀɴɴᴇʟꜱ")
 
     text = '📑 **Iɴᴅᴇxᴇᴅ ᴄʜᴀɴɴᴇʟs/ɢʀᴏᴜᴘs**\n'
     for channel in channels:
@@ -660,7 +660,7 @@ async def settings(client, message):
             )
         else:
             await message.reply_text(
-                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
+                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As ᴘᴇʀ Yᴏᴜʀ Wɪsʜ ⚙</b>",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True,
                 parse_mode=enums.ParseMode.HTML,
@@ -672,7 +672,7 @@ async def settings(client, message):
 async def set_tutorial_1(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")
     grp_id = message.chat.id
     title = message.chat.title
     invite_link = await client.export_chat_invite_link(grp_id)
@@ -695,7 +695,7 @@ async def set_tutorial_1(client, message):
 async def set_tutorial_2(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")
     grp_id = message.chat.id
     title = message.chat.title
     invite_link = await client.export_chat_invite_link(grp_id)
@@ -715,7 +715,7 @@ async def set_tutorial_2(client, message):
 async def set_tutorial_3(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")
     grp_id = message.chat.id
     title = message.chat.title
     invite_link = await client.export_chat_invite_link(grp_id)
@@ -735,7 +735,7 @@ async def set_tutorial_3(client, message):
 async def set_verify(c, m):
     chat_type = m.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await m.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")
+        return await m.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")
     grp_id = m.chat.id
     title = m.chat.title
     user = await c.get_chat_member(m.chat.id, m.from_user.id)
@@ -754,7 +754,7 @@ async def set_verify(c, m):
             SHORT_LINK = resp['shortenedUrl']
         await save_group_settings(grp_id, 'verify', URL)
         await save_group_settings(grp_id, 'verify_api', API)
-        await sts.edit(f"<b><u>✅ sᴜᴄᴄᴇssꜰᴜʟʟʏ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ɪs ᴀᴅᴅᴇᴅ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
+        await sts.edit(f"<b><u>✅ ʏᴏᴜʀ ꜱʜᴏʀᴛᴇɴᴇʀ ɪꜱ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
         user_id = m.from_user.id
         user_info = f"@{m.from_user.username}" if m.from_user.username else f"{m.from_user.mention}"
         link = (await c.get_chat(m.chat.id)).invite_link
@@ -765,7 +765,7 @@ async def set_verify(c, m):
     except Exception as e:
         await save_group_settings(grp_id, 'verify', VERIFY_URL)
         await save_group_settings(grp_id, 'verify_api', VERIFY_API)
-        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/safarisuport>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_verify droplink.co 5c6377b71bb8c36629bad14b3c67d9749c4f62e6`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
+        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/infohubsupport_robot>ꜱᴜᴘᴘᴏʀᴛ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_verify droplink.co 5c6377b71bb8c36629bad14b3c67d9749c4f62e6`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
 
 @Client.on_message(filters.command('set_verify2'))
 async def set_verify2(c, m):
@@ -790,7 +790,7 @@ async def set_verify2(c, m):
             SHORT_LINK = resp['shortenedUrl']
         await save_group_settings(grp_id, 'verify_2', URL)
         await save_group_settings(grp_id, 'verify_api2', API)
-        await sts.edit(f"<b><u>✅ sᴜᴄᴄᴇssꜰᴜʟʟʏ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ɪs ᴀᴅᴅᴇᴅ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
+        await sts.edit(f"<b><u>✅ ʏᴏᴜʀ ꜱʜᴏʀᴛᴇɴᴇʀ ɪꜱ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
         user_id = m.from_user.id
         user_info = f"@{m.from_user.username}" if m.from_user.username else f"{m.from_user.mention}"
         link = (await c.get_chat(m.chat.id)).invite_link
@@ -826,7 +826,7 @@ async def set_verify3(c, m):
             SHORT_LINK = resp['shortenedUrl']
         await save_group_settings(grp_id, 'verify_3', URL)
         await save_group_settings(grp_id, 'verify_api3', API)
-        await sts.edit(f"<b><u>✅ sᴜᴄᴄᴇssꜰᴜʟʟʏ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ɪs ᴀᴅᴅᴇᴅ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
+        await sts.edit(f"<b><u>✅ ʏᴏᴜʀ ꜱʜᴏʀᴛᴇɴᴇʀ ɪꜱ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
         user_id = m.from_user.id
         user_info = f"@{m.from_user.username}" if m.from_user.username else f"{m.from_user.mention}"
         link = (await c.get_chat(m.chat.id)).invite_link
@@ -837,7 +837,7 @@ async def set_verify3(c, m):
     except Exception as e:
         await save_group_settings(grp_id, 'verify_3', VERIFY_URL3)
         await save_group_settings(grp_id, 'verify_api3', VERIFY_API3)
-        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/safarisuport>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_verify3 sharedisklinks.com 587f94f0e0b1813a52aed61290af6ea79d6ee464`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
+        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/infohubsupport_robot>ꜱᴜᴘᴘᴏʀᴛ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_verify droplink.co 5c6377b71bb8c36629bad14b3c67d9749c4f62e6`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
 
 @Client.on_message(filters.command('set_stream'))
 async def set_stream(c, m):
@@ -851,7 +851,7 @@ async def set_stream(c, m):
     if not owner:
         return await m.reply_text('<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>')
     if len(m.text.split()) == 1:
-        await m.reply("<b>Use this command like this - \n\n`/set_stream tnshort.net 06b24eb6bbb025713cd522fb3f696b6d5de11354`</b>")
+        await m.reply("<b>ᴜꜱᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜɪꜱ ᴍᴀɴɴᴇʀ - \n\n`/set_stream tnshort.net 06b24eb6bbb025713cd522fb3f696b6d5de11354`</b>")
         return
     sts = await m.reply("<b>♻️ ᴄʜᴇᴄᴋɪɴɢ...</b>")
     try:
@@ -862,7 +862,7 @@ async def set_stream(c, m):
             SHORT_LINK = resp['shortenedUrl']
         await save_group_settings(grp_id, 'streamsite', URL)
         await save_group_settings(grp_id, 'streamapi', API)
-        await sts.edit(f"<b><u>✅ sᴜᴄᴄᴇssꜰᴜʟʟʏ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ɪs ᴀᴅᴅᴇᴅ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
+        await sts.edit(f"<b><u>✅ ʏᴏᴜʀ ꜱʜᴏʀᴛᴇɴᴇʀ ɪꜱ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ</u>\n\nᴅᴇᴍᴏ - {SHORT_LINK}\n\nsɪᴛᴇ - `{URL}`\n\nᴀᴘɪ - `{API}`</b>")
         user_id = m.from_user.id
         user_info = f"@{m.from_user.username}" if m.from_user.username else f"{m.from_user.mention}"
         link = (await c.get_chat(m.chat.id)).invite_link
@@ -872,7 +872,7 @@ async def set_stream(c, m):
     except Exception as e:
         await save_group_settings(grp_id, 'streamsite', STREAM_SITE)
         await save_group_settings(grp_id, 'streamapi', STREAM_API)
-        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/safarisuport>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_stream sharedisklinks.com 587f94f0e0b1813a52aed61290af6ea79d6ee464`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
+        await sts.edit(f"<b><u>❌ ᴇʀʀᴏʀ ᴏᴄᴄᴏᴜʀᴇᴅ ❌</u>\n\nᴀᴜᴛᴏ ᴀᴅᴅᴇᴅ ᴅᴇꜰᴜʟᴛ sʜᴏʀᴛɴᴇʀ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɴ ᴜsᴇ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ᴏʀ ᴀᴅᴅ ᴠᴀʟɪᴅ sʜᴏʀᴛʟɪɴᴋ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ & ᴀᴘɪ\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴜʀ <a href=https://t.me/infohubsupport_robot>sᴜᴘᴘᴏʀᴛ</a> ꜰᴏʀ sᴏʟᴠᴇ ᴛʜɪs ɪssᴜᴇ...\n\nʟɪᴋᴇ -\n\n`/set_stream sharedisklinks.com 587f94f0e0b1813a52aed61290af6ea79d6ee464`\n\n💔 ᴇʀʀᴏʀ - <code>{e}</code></b>")
            
 @Client.on_message(filters.command('set_caption'))
 async def save_caption(client, message):
@@ -926,7 +926,7 @@ async def set_fsub(client, message):
 async def remove_fsub(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")       
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")       
     grp_id = message.chat.id
     title = message.chat.title
     user = await client.get_chat_member(message.chat.id, message.from_user.id)
@@ -935,7 +935,7 @@ async def remove_fsub(client, message):
         return await message.reply_text('<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>')
     settings = await get_settings(grp_id)
     if settings["fsub_id"] == AUTH_CHANNEL:
-        await message.reply_text("<b>ᴄᴜʀʀᴇɴᴛʟʏ ɴᴏ ᴀɴʏ ғᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ.... <code>[ᴅᴇғᴀᴜʟᴛ ᴀᴄᴛɪᴠᴀᴛᴇ]</code></b>")
+        await message.reply_text("<b>ᴄᴜʀʀᴇɴᴛʟʏ ɴᴏ ᴀᴄᴛɪᴠᴇ ꜰᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ ɪꜱ ꜰᴏᴜɴᴅ... <code>[ᴅᴇғᴀᴜʟᴛ ᴀᴄᴛɪᴠᴀᴛᴇ]</code></b>")
     else:
         await save_group_settings(grp_id, 'fsub_id', AUTH_CHANNEL)
         mention = message.from_user.mention
@@ -1063,7 +1063,7 @@ async def verify_gap(client, message):
 async def verify_gap2(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")       
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")       
     grp_id = message.chat.id
     title = message.chat.title
     invite_link = await client.export_chat_invite_link(grp_id)
@@ -1084,7 +1084,7 @@ async def verify_gap2(client, message):
 async def set_file_limit(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")       
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")       
     grp_id = message.chat.id
     title = message.chat.title
     invite_link = await client.export_chat_invite_link(grp_id)
@@ -1104,7 +1104,7 @@ async def set_file_limit(client, message):
 async def set_send_limit(client, message):
     chat_type = message.chat.type
     if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ...</b>")       
+        return await message.reply_text("<b>ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ!</b>")       
     grp_id = message.chat.id
     title = message.chat.title
     invite_link = await client.export_chat_invite_link(grp_id)
@@ -1197,9 +1197,9 @@ async def send_msg(bot, message):
             else:
                 success = False
             if success:
-                await message.reply_text(f"<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ sᴇɴᴅ ᴛᴏ {user.mention}.</b>")
+                await message.reply_text(f"<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ꜱᴇɴᴛ ᴛᴏ {user.mention}.</b>")
             else:
-                await message.reply_text("<b>Tʜɪs ᴜsᴇʀ ᴅɪᴅɴ'ᴛ sᴛᴀʀᴛᴇᴅ ᴛʜɪs ʙᴏᴛ ʏᴇᴛ!</b>")
+                await message.reply_text("<b>Tʜɪs ᴜsᴇʀ ᴅɪᴅ ɴᴏᴛ ᴇᴠᴇɴ ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ʏᴇᴛ! 🤣</b>")
         except Exception as e:
             await message.reply_text(f"<b>Eʀʀᴏʀ: {e}</b>")
     else:
