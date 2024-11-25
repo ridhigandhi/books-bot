@@ -62,7 +62,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'hoti_noti')
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'sharedisklinks.com'))
 STREAM_API = (environ.get('STREAM_API', '25f7224027de633a6786390a6b6b21a5688fdbf4'))
-STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Hoe/69'))
+STREAM_HTO = (environ.get('STREAMHTO', '-1002395828988'))
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
