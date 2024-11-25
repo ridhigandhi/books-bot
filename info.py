@@ -26,7 +26,7 @@ TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
-PICS = (environ.get('PICS', 'https://envs.sh/z_s.mp4')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/z_N.jpg https://envs.sh/z_H.jpg https://envs.sh/z_f.jpg https://envs.sh/z_a.jpg https://envs.sh/z_m.jpg https://envs.sh/w75.jpg https://envs.sh/w7L.jpg https://envs.sh/wZg.jpg https://envs.sh/wZH.jpg https://envs.sh/w7c.jpg https://envs.sh/w7j.jpg https://envs.sh/w7Z.jpg')).split()
 WELCOME_VID = environ.get("WELCOME_VID", "https://envs.sh/z_s.mp4")
 
 #premium imag
