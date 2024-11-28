@@ -82,7 +82,7 @@ async def redeem_code_cmd(client, message):
             code_data = await db.codes.find_one({"code_hash": hash_code(code)})
             if code_data:
                 if code_data['used']:
-                    await message.reply_text(f"🚫 ᴛʜɪs ᴄᴏᴅᴇ ʜᴀꜱ ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ᴜꜱᴇᴅ!! 🚫.")
+                    await message.reply_text(f"🚫 ᴛʜɪs ᴄᴏᴅᴇ ʜᴀꜱ ʙᴇᴇɴ ᴀʟʀᴇᴀᴅʏ ᴜꜱᴇᴅ!!")
                     return
                 premium_duration_seconds = await parse_duration(code_data['duration'])
                 if premium_duration_seconds is not None:
@@ -91,7 +91,7 @@ async def redeem_code_cmd(client, message):
                     await db.update_user(user_data)
                     await db.codes.update_one({"_id": code_data["_id"]}, {"$set": {"used": True, "user_id": user_id}})
                     expiry_str_in_ist = new_expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ: %d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ: %I:%M:%S %p")
-                    await message.reply_text(f"🎉 ᴄᴏᴅᴇ ʀᴇᴅᴇᴇᴍᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!\nᴏᴜ ɴᴏᴡ ʜᴀᴠᴇ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss ᴜɴᴛɪʟ:\n\n✨ᴅᴜʀᴀᴛɪᴏɴ: {code_data['duration']}\n{expiry_str_in_ist}")
+                    await message.reply_text(f"🎉 ᴄᴏᴅᴇ ʀᴇᴅᴇᴇᴍᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!\nʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟᴏᴄᴋᴇᴅ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ ᴜɴᴛɪʟ:\n\n✨ᴅᴜʀᴀᴛɪᴏɴ: {code_data['duration']}\n{expiry_str_in_ist}")
                 else:
                     await message.reply_text("🚫 ɪɴᴠᴀʟɪᴅ ᴅᴜʀᴀᴛɪᴏɴ ɪɴ ᴛʜᴇ ᴄᴏᴅᴇ.")
             else:
