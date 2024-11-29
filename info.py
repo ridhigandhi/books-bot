@@ -63,7 +63,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'hoti_noti')
 STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
 STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
 STREAM_HTO = (environ.get('STREAMHTO', '-1002310300801'))
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
 #verify site api and url
@@ -88,7 +88,7 @@ TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/safabsovhwi3')
 AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), False)
 
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002310300801').split()]
-MAX_B_TN = environ.get("MAX_B_TN", "7")
+MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/theultimatetheatre')
