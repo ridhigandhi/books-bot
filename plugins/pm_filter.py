@@ -54,11 +54,11 @@ async def stream_download(bot, query):
         non_online = await stream_site(online, grp_id)
         non_download = await stream_site(download, grp_id)
         if not await db.has_premium_access(user_id) and settings.get('stream_mode', STREAM_MODE):
-            await msg.reply_text(text=f"ᴜꜱᴇʀ ʟɪɴᴋ: tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nꜱᴛʀᴇᴀᴍ ᴍᴏᴅᴇ ᴏɴ",
+            await msg.reply_text(text=f"••ᴜꜱᴇʀ ʟɪɴᴋ: tg://openmessage?user_id={user_id}\n\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nꜱᴛʀᴇᴀᴍ ᴍᴏᴅᴇ ᴏɴ",
                 reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
                         InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)]]))
-            await query.answer("🎀 ɴᴏᴛᴇ:\nᴛʜᴇ ᴀᴅꜱ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ ʜᴀꜱ ʙᴇᴇɴ ʀᴇꜱᴇʀᴠᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ᴇxᴄʟᴜꜱɪᴠᴇʟʏ.\n\nᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴄᴋ ʙᴇʟᴏᴡ!", show_alert=True)
+            await query.answer("🎀 ɴᴏᴛᴇ: ᴛʜᴇ ꜱᴛʀᴇᴀᴍ ᴀɴᴅ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ꜰᴇᴀᴛᴜʀᴇꜱ ᴀʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛᴏ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ᴏɴʟʏ.\n\nʜᴏᴡᴇᴠᴇʀ, ʏᴏᴜ ᴄᴀɴ ꜱᴛɪʟʟ ᴡᴀᴛᴄʜ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ꜰɪʟᴇꜱ ʙʏ ᴛʜᴇ ɴᴏʀᴍᴀʟ ᴀɴᴅ ᴜꜱᴜᴀʟ ᴍᴇᴛʜᴏᴅ! ✅", show_alert=True)
             await query.edit_message_reply_markup(
                 reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
@@ -67,7 +67,7 @@ async def stream_download(bot, query):
                         InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url=STREAM_HTO)]]))
             return
         else:
-            await msg.reply_text(text=f"ᴜꜱᴇʀ ʟɪɴᴋ: tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nꜱᴛʀᴇᴀᴍ ᴍᴏᴅᴇ ᴏꜰꜰ",
+            await msg.reply_text(text=f"••ᴜꜱᴇʀ ʟɪɴᴋ: tg://openmessage?user_id={user_id}\n\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nꜱᴛʀᴇᴀᴍ ᴍᴏᴅᴇ ᴏꜰꜰ",
                 reply_markup=InlineKeyboardMarkup([[
                         InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
                         InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=online)]]))
@@ -1051,7 +1051,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 pass
         if buttons:
             await query.message.edit_text(
-                "Yᴏᴜʀ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘ ᴅᴇᴛᴀɪʟs ;\n\n",
+                "Yᴏᴜʀ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘ ᴅᴇᴛᴀɪʟs :\n\n",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     
@@ -1497,7 +1497,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+            InlineKeyboardButton('ʙᴏᴛ ᴜᴘᴅᴀᴛᴇꜱ', url=CHNL_LNK)
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start')
         ]]
