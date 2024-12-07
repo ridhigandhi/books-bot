@@ -59,17 +59,16 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('🛠️ ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
+                        InlineKeyboardButton('🆕 ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
                         InlineKeyboardButton('💡 ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='features')
                     ],[
-                        InlineKeyboardButton('🍀 Hᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('🛠️ Hᴇʟᴘ', callback_data='help'),
                         InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ', callback_data='about')
                     ],[
                         InlineKeyboardButton('🆓 ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"), 
                         InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
                     ],[
-                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_robot'),
-                        InlineKeyboardButton('🆕 ᴍᴏᴠɪᴇꜱ', url='https://t.me/+xJ4x_LnXS8IzMmVl')
+                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_robot')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgIAAxkBAAIBr2dDI0XOnpPn62EjCB1U9pGIidx0AAJ8EgAC8ZgxS6cvrXhhVMIIHgQ") 
@@ -87,17 +86,16 @@ async def start(client, message):
             buttons = [[
                         InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('🛠️ ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
+                        InlineKeyboardButton('🆕 ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
                         InlineKeyboardButton('💡 ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='features')
                     ],[
-                        InlineKeyboardButton('🍀 Hᴇʟᴘ', callback_data='help'),
+                        InlineKeyboardButton('🛠️ Hᴇʟᴘ', callback_data='help'),
                         InlineKeyboardButton('🤖 ᴀʙᴏᴜᴛ', callback_data='about')
                     ],[
                         InlineKeyboardButton('🆓 ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ', callback_data="pm_reff"), 
                         InlineKeyboardButton('✨ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data="premium_info")
                     ],[
-                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_robot'),
-                        InlineKeyboardButton('🆕 ᴍᴏᴠɪᴇꜱ', url='https://t.me/+xJ4x_LnXS8IzMmVl')
+                        InlineKeyboardButton('☎️ ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/infohubsupport_robot')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             m=await message.reply_sticker("CAACAgIAAxkBAAIBr2dDI0XOnpPn62EjCB1U9pGIidx0AAJ8EgAC8ZgxS6cvrXhhVMIIHgQ") 
