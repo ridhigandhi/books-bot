@@ -1784,7 +1784,7 @@ async def auto_filter(client, msg, spoll=False):
             if len(message.text) < 100:
                 search = message.text
                 m=await message.reply_sticker(sticker="CAACAgUAAxkBAAIFnGdEvhhXklJHOeZAEiOas7jkeNjeAALdCgACiVdhVxmB0t2QzTKsHgQ",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ⓌⒶⒾⓉ ⓅⓄⓄⓀⒾⒺ", url=CHNL_LNK)]]))
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🆆🅰️🅸🆃 🅿️🅾️🅾️🅺🅸🅴", url=CHNL_LNK)]]))
                 search = search.lower()
                 find = search.split(" ")
                 search = ""
@@ -1824,7 +1824,7 @@ async def auto_filter(client, msg, spoll=False):
             message = msg.message.reply_to_message  # msg will be callback query
             search, files, offset, total_results = spoll
             m=await message.reply_sticker(sticker="CAACAgUAAxkBAAIFnGdEvhhXklJHOeZAEiOas7jkeNjeAALdCgACiVdhVxmB0t2QzTKsHgQ",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ⓌⒶⒾⓉ ⓅⓄⓄⓀⒾⒺ", url=CHNL_LNK)]]))
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🆆🅰️🅸🆃 🅿️🅾️🅾️🅺🅸🅴", url=CHNL_LNK)]]))
             settings = await get_settings(message.chat.id)
         key = f"{message.chat.id}-{message.id}"
         temp.GETALL[key] = files
