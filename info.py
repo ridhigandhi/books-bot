@@ -63,7 +63,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'hoti_noti')
 STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
 STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
 STREAM_HTO = (environ.get('STREAMHTO', '-1002310300801'))
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), False)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
 
 
 #verify site api and url
@@ -101,7 +101,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'infohubsupport_robot')
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
-PM_FILTER = is_enabled((environ.get('PM_FILTER', "True")), False)
+PM_FILTER = is_enabled((environ.get('PM_FILTER', "False")), False)
 
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
