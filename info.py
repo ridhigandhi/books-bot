@@ -63,7 +63,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'hoti_noti')
 STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
 STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
 STREAM_HTO = (environ.get('STREAMHTO', '-1002310300801'))
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "True")), True)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
 #verify site api and url
