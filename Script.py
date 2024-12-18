@@ -245,7 +245,7 @@ The Kite Runner Epub
     DISCLAIMER_TXT = """
 ᴘʟᴇᴀꜱᴇ ᴛᴀᴋᴇ ᴀ ᴍᴏᴍᴇɴᴛ ᴛᴏ ʀᴇᴠɪᴇᴡ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ᴀʀᴛɪᴄʟᴇ ʙᴇꜰᴏʀᴇ ᴄᴏɴᴛɪɴᴜɪɴɢ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ.
 
-⚠️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ - https://telegra.ph/Disclaimer-for-The-Devils-Theatre-11-25 
+⚠️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ - https://telegra.ph/Disclaimer-for-Your-Books-12-18 
 
 ⌛ ʙʏ ᴘʀᴏᴄᴇᴇᴅɪɴɢ, ʏᴏᴜ ᴀᴄᴋɴᴏᴡʟᴇᴅɢᴇ ᴀɴᴅ ᴀɢʀᴇᴇ ᴛᴏ ᴛʜᴇ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ꜱᴇᴛ ꜰᴏʀᴛʜ ʙʏ ᴛʜᴇ ᴀᴅᴍɪɴꜱ. 
 
