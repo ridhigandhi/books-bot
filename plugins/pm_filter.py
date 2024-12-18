@@ -1321,7 +1321,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('☆ ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ☆', url="https://youtube.com/@pagesandvoices?si=jYNKNQg1_V1icOEx")
                 ],[
                     InlineKeyboardButton('🆕 ᴜᴘᴅᴀᴛᴇꜱ', callback_data='channels'), 
                     InlineKeyboardButton('💡 ꜰᴇᴀᴛᴜʀᴇꜱ', callback_data='features')
@@ -1498,7 +1498,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "channels":
         buttons = [[
             InlineKeyboardButton('ʙᴏᴛ ᴜᴘᴅᴀᴛᴇꜱ', url=CHNL_LNK),
-            InlineKeyboardButton('ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/+xJ4x_LnXS8IzMmVl')
+            InlineKeyboardButton('ꜰɪʟᴇꜱ ᴜᴘᴅᴀᴛᴇꜱ', url='https://t.me/+DQZats8ruj82ZDdl')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start')
         ]]
@@ -1783,7 +1783,7 @@ async def auto_filter(client, msg, spoll=False):
                 return
             if len(message.text) < 100:
                 search = message.text
-                m=await message.reply_sticker(sticker="CAACAgUAAxkBAAIFnGdEvhhXklJHOeZAEiOas7jkeNjeAALdCgACiVdhVxmB0t2QzTKsHgQ",
+                m=await message.reply_sticker(sticker="CAACAgIAAxkBAAI_YGdjDOmdwuGGjOgptNuyOsBsh5ypAAIzAQAC9wLIDzvK4ZTu2U7NHgQ",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🆆🅰️🅸🆃 🅿️🅾️🅾️🅺🅸🅴", url=CHNL_LNK)]]))
                 search = search.lower()
                 find = search.split(" ")
@@ -1803,7 +1803,7 @@ async def auto_filter(client, msg, spoll=False):
                 if not files:
                     await m.delete()
                     if settings["spell_check"]:
-                        ai_sts = await message.reply_sticker(sticker=f"CAACAgQAAxkBAAIFrWdEvvayqcqFnmnE9I854Zq0QO-UAAIWGQACBz0IUfk3O8NjyDd_HgQ")
+                        ai_sts = await message.reply_sticker(sticker=f"CAACAgIAAxkBAAI_YGdjDOmdwuGGjOgptNuyOsBsh5ypAAIzAQAC9wLIDzvK4ZTu2U7NHgQ")
                         st=await message.reply('<b>Ai is Cheking For Your Spelling. Please Wait.</b>') 
                         is_misspelled = await ai_spell_check(chat_id = message.chat.id,wrong_name=search)
                         if is_misspelled:
@@ -1823,7 +1823,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             message = msg.message.reply_to_message  # msg will be callback query
             search, files, offset, total_results = spoll
-            m=await message.reply_sticker(sticker="CAACAgUAAxkBAAIFnGdEvhhXklJHOeZAEiOas7jkeNjeAALdCgACiVdhVxmB0t2QzTKsHgQ",
+            m=await message.reply_sticker(sticker="CAACAgIAAxkBAAI_YGdjDOmdwuGGjOgptNuyOsBsh5ypAAIzAQAC9wLIDzvK4ZTu2U7NHgQ",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🆆🅰️🅸🆃 🅿️🅾️🅾️🅺🅸🅴", url=CHNL_LNK)]]))
             settings = await get_settings(message.chat.id)
         key = f"{message.chat.id}-{message.id}"
@@ -1929,7 +1929,7 @@ async def auto_filter(client, msg, spoll=False):
                 for file in files:
                     cap += f"<b>\n\n<a href='https://telegram.me/{temp.U_NAME}?start=files_{message.chat.id}_{file.file_id}'> 📁 {get_size(file.file_size)} ▷ {file.file_name}</a></b>"
         else:
-            CAPTION = f"<b>☠️ ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.first_name}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📚 Your Requested Files 👇\n\n</b>"
+            CAPTION = f"<b>🦋 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.first_name}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📚 Your Requested Files 👇\n\n</b>"
             if not settings.get("button", SINGLE_BUTTON):
                 cap = f"{CAPTION}"
             else:
