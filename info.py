@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', "21145186"))
 API_HASH = environ.get('API_HASH', "daa53f4216112ad22b8a8f6299936a46")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7457680560:AAG9npkGwvWZtLpLb0_D_89VecyVnU0s4ek")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7447432554:AAGlUHtwqqk-gm-sA1ucsh_k69W4Xozi0Ow")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
@@ -37,17 +37,17 @@ QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wLE.jpg') # Scanner Code image
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "50")) # Set Referel point Count 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1002310300801')
+premium = environ.get('PREMIUM_LOGS', '-1002495227151')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 # lock file, set file limit 
-FILE_LIMITE = int(environ.get('FILE_LIMITE', 5))
+FILE_LIMITE = int(environ.get('FILE_LIMITE', 3))
 SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 2))
 LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6011680723').split()]
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "the_universal_being") # widout 👉 @
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002251367548 -1002317312223').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002395727504').split()]
 # post channel auto post new movie
 POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002158797548').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
@@ -55,14 +55,14 @@ AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:ViqwwxVlJVle7GEi@foxy.tcgdg.mongodb.net/?retryWrites=true&w=majority&appName=foxy")
-DATABASE_NAME = environ.get('DATABASE_NAME', "foxy")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'hoti_noti')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:jxkHv7UCTxqzAZ3d@maamdao.vezso.mongodb.net/?retryWrites=true&w=majority&appName=maamdao")
+DATABASE_NAME = environ.get('DATABASE_NAME', "maamdao")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ami_je_ke_tomar')
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
-STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
-STREAM_HTO = (environ.get('STREAMHTO', '-1002310300801'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.co'))
+STREAM_API = (environ.get('STREAM_API', '068bfe93b5ef479dcaed34b6f879049c438932c8'))
+STREAM_HTO = (environ.get('STREAMHTO', '-1002495227151'))
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
@@ -87,21 +87,21 @@ TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/safabsovhwi3')
 # auto files delete
 AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), False)
 
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002310300801').split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002495227151').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/theultimatetheatre')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/infohub_updates')
 MSG_ALRT = environ.get('MSG_ALRT', '🏴‍☠️ ᴀʏᴇ, ᴀʏᴇ ᴄᴀᴘᴛᴀɪɴ!!')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002310300801))
-GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002310300801)) # Group verify stats 
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002310300801)) # movies request channel, else log channel
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002495227151))
+GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002495227151)) # Group verify stats 
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002495227151)) # movies request channel, else log channel
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'infohubsupport_robot')
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
-PM_FILTER = is_enabled((environ.get('PM_FILTER', "False")), False)
+PM_FILTER = is_enabled((environ.get('PM_FILTER', "True")), False)
 
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
