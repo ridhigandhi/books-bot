@@ -38,7 +38,7 @@ async def start(client, message):
         files_counts = await db.files_count(message.from_user.id, "files_count") or 0
         if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             buttons = [[
-                        InlineKeyboardButton('☆ ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ☆', url="youtube.com/@pagesandvoices")
+                        InlineKeyboardButton('☆ ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ☆', url="https://youtube.com/@pagesandvoices?si=jYNKNQg1_V1icOEx")
                       ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             await message.reply_text(
