@@ -26,7 +26,7 @@ TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
-PICS = (environ.get('PICS', 'https://envs.sh/z_N.jpg https://envs.sh/z_H.jpg https://envs.sh/z_f.jpg https://envs.sh/z_a.jpg https://envs.sh/z_m.jpg https://envs.sh/w75.jpg https://envs.sh/w7L.jpg https://envs.sh/wZg.jpg https://envs.sh/wZH.jpg https://envs.sh/w7c.jpg https://envs.sh/w7j.jpg https://envs.sh/w7Z.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/88O.jpg https://envs.sh/88a.jpg https://envs.sh/88f.jpg https://envs.sh/88g.jpg')).split()
 WELCOME_VID = environ.get("WELCOME_VID", "https://envs.sh/z_s.mp4")
 
 #premium imag
@@ -52,7 +52,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002158797548').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
-NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
+NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:jxkHv7UCTxqzAZ3d@maamdao.vezso.mongodb.net/?retryWrites=true&w=majority&appName=maamdao")
