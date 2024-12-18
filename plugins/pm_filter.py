@@ -138,7 +138,7 @@ async def pm_text(bot, message):
     if await db.get_setting("PM_FILTER", default=PM_FILTER) or await db.has_premium_access(message.from_user.id):
         await auto_filter(bot, message)
     else:
-        await message.reply_text("<b>ɪꜰ ʏᴏᴜ ᴡɪꜱʜ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴇ ʙᴏᴛ ᴛʜʀᴏᴜɢʜ 'ᴅɪʀᴇᴄᴛ ꜱᴇᴀʀᴄʜ' ɪɴ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴘᴍ, ʏᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ.\n\nʜᴏᴡᴇᴠᴇʀ, ʏᴏᴜ ᴄᴀɴ ꜱᴛɪʟʟ ɢᴇᴛ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴡʜᴇʀᴇ ɪ'ᴍ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ\n\nयदि आप बॉट से मूवी लेना चाहते हैं तो आपको बॉट का प्रीमियम लेना होगा\n\nअन्यथा आप ग्रुप से मूवी ले सकते हैं.</b>", reply_markup=InlineKeyboardMarkup([
+        await message.reply_text("<b>ɪꜰ ʏᴏᴜ ᴡɪꜱʜ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴇ ʙᴏᴛ ᴛʜʀᴏᴜɢʜ 'ᴅɪʀᴇᴄᴛ ꜱᴇᴀʀᴄʜ' ɪɴ ᴛʜᴇ ʙᴏᴛ'ꜱ ᴘᴍ, ʏᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ.\n\nʜᴏᴡᴇᴠᴇʀ, ʏᴏᴜ ᴄᴀɴ ꜱᴛɪʟʟ ɢᴇᴛ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ᴡʜᴇʀᴇ ɪ'ᴍ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ.</b>", reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("Gʀᴏᴜᴘ Hᴇʀᴇ", url=GRP_LNK)],
             [InlineKeyboardButton('✨ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ: ᴜɴʟᴏᴄᴋ ᴘᴍ ꜱᴇᴀʀᴄʜ✨', callback_data=f'premium_info')]]))
 
