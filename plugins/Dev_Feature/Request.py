@@ -50,23 +50,23 @@ async def requests(client, message):
     user_id = message.from_user.id
 
     if not requested_movie:
-        await message.reply_text("🙅 To request a movie or webseries, please mention its name along with the year\nJust like this 👇\n<code>/request Barbie 2023</code>\n\n🙅 फिल्म रिक्वेस्ट करने के लिए कृपया फिल्म का नाम और साल साथ में लिखें\nकुछ इस तरह 👇\n<code>/request Barbie 2023</code>")
+        await message.reply_text("🙅 To request a book, please mention its name along with the author\nJust like this 👇\n<code>/request The Kite Runner by Khaled Hosseini</code>")
         return
 
     files, offset, total_results = await get_search_results(chat_id=message.chat.id, query=requested_movie)
 
     if files: 
         file_name = files[0]['file_name']
-        await message.reply_text(f"🎥 {file_name}\n\nThe movie or series you requested is available in the group.\n\nGroup link = {GRP_LNK}\n\n🎥 {file_name}\n\nआपने जो मूवी रिक्वेस्ट की है वो ग्रुप में उपलब्ध हैं\n\nग्रुप लिंक = {GRP_LNK}")
+        await message.reply_text(f"🎥 {file_name}\n\nThe book you requested is available in the group.\n\nGroup link = {GRP_LNK}\n\n🎥 {file_name}")
     else:
         closest_movie = await ai_spell_check(chat_id=message.chat.id, wrong_name=requested_movie)
         if closest_movie:
             files, offset, total_results = await get_search_results(chat_id=message.chat.id, query=closest_movie)
             if files:
                 file_name = files[0]['file_name']
-                await message.reply_text(f"🎥 {file_name}\n\nThe movie or series you requested is available in the group.\n\nGroup link = {GRP_LNK}\n\n🎥 {file_name}\n\nआपने जो मूवी रिक्वेस्ट की है वो ग्रुप में उपलब्ध हैं\n\nग्रुप लिंक = {GRP_LNK}")
+                await message.reply_text(f"🎥 {file_name}\n\nThe book you requested is available in the group.\n\nGroup link = {GRP_LNK}\n\n🎥 {file_name}")
             else:
-                await message.reply_text(f"✅ Your movie <b>{closest_movie}</b> has been sent to our admin.\n\n🚀 We will notify you as soon as the movie is uploaded.\n\n📌 Note - The admin may be busy with other tasks, so it might take some time to upload the movie.\n\n✅ आपकी फिल्म <b>{closest_movie}</b> हमारे एडमिन के पास भेज दिया गया है.\n\n🚀 जैसे ही फिल्म अपलोड होती हैं हम आपको मैसेज देंगे.\n\n📌 ध्यान दे - एडमिन अपने काम में व्यस्त हो सकते है इसलिए फिल्म अपलोड होने में टाइम लग सकता हैं")
+                await message.reply_text(f"✅ Your book request <b>{closest_movie}</b> has been sent to our admins.\n\n🚀 We will notify you as soon as the book is uploaded.\n\n📌 Note - The admin may be busy with other tasks, so it might take some time to upload the book. ✅")
                 await client.send_message(
                     REQ_CHANNEL,
                     f"☏ #𝙍𝙀𝙌𝙐𝙀𝙎𝙏𝙀𝘿_𝘾𝙊𝙉𝙏𝙀𝙉𝙏 ☎︎\n\nʙᴏᴛ - {temp.B_NAME}\nɴᴀᴍᴇ - {message.from_user.mention} (<code>{message.from_user.id}</code>)\nRᴇǫᴜᴇꜱᴛ - <code>{closest_movie}</code>",
@@ -84,7 +84,7 @@ async def requests(client, message):
                         ])
                 )
         else:
-            await message.reply_text(f"✅ आपकी फिल्म <b>{requested_movie}</b> हमारे एडमिन के पास भेज दिया गया है.\n\n🚀 जैसे ही फिल्म अपलोड होती हैं हम आपको मैसेज देंगे.\n\n📌 ध्यान दे - एडमिन अपने काम में व्यस्त हो सकते है इसलिए फिल्म अपलोड होने में टाइम लग सकता हैं")
+            await message.reply_text(f"✅ आपकी book <b>{requested_movie}</b> हमारे एडमिन के पास भेज दिया गया है.\n\n🚀 जैसे ही फिल्म अपलोड होती हैं हम आपको मैसेज देंगे.\n\n📌 ध्यान दे - एडमिन अपने काम में व्यस्त हो सकते है इसलिए book अपलोड होने में टाइम लग सकता हैं")
             await client.send_message(
                 REQ_CHANNEL,
                 f"📝 #REQUESTED_CONTENT 📝\n\nʙᴏᴛ - {temp.B_NAME}\nɴᴀᴍᴇ - {message.from_user.mention} (<code>{message.from_user.id}</code>)\nRᴇǫᴜᴇꜱᴛ - <code>{requested_movie}</code>",
