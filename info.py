@@ -60,8 +60,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "maamdao")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ami_je_ke_tomar')
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.co'))
-STREAM_API = (environ.get('STREAM_API', '068bfe93b5ef479dcaed34b6f879049c438932c8'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
+STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
 STREAM_HTO = (environ.get('STREAMHTO', '-1002495227151'))
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
