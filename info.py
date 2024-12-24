@@ -67,22 +67,22 @@ STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
 #verify site api and url
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
-VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-VERIFY_URL = environ.get('VERIFY_URL', 'sharedisklinks.com')
-VERIFY_API = (environ.get('VERIFY_API', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
+VERIFY_IMG = environ.get("VERIFY_IMG", "https://envs.sh/Jze.png")
+VERIFY_URL = environ.get('VERIFY_URL', 'hypershort.com')
+VERIFY_API = (environ.get('VERIFY_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "600"))
-VERIFY_URL2 = environ.get('VERIFY_URL2', 'sharedisklinks.com')
-VERIFY_API2 = (environ.get('VERIFY_API2', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+VERIFY_URL2 = environ.get('VERIFY_URL2', 'hypershort.com')
+VERIFY_API2 = (environ.get('VERIFY_API2', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
  
 THIRD_VERIFY_GAP = int(environ.get('THIRD_VERIFY_GAP', "600"))
-VERIFY_URL3 = environ.get('VERIFY_URL3', 'sharedisklinks.com')
-VERIFY_API3 = (environ.get('VERIFY_API3', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+VERIFY_URL3 = environ.get('VERIFY_URL3', 'hypershort.com')
+VERIFY_API3 = (environ.get('VERIFY_API3', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
  
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shdjekkw')
-TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/hejejje')
-TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/safabsovhwi3')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/ifohub_updates/34')
+TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/ifohub_updates/34')
+TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/ifohub_updates/34')
 
 # auto files delete
 AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), False)
