@@ -27,7 +27,7 @@ TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
 PICS = (environ.get('PICS', 'https://envs.sh/88O.jpg https://envs.sh/88a.jpg https://envs.sh/88f.jpg https://envs.sh/88g.jpg')).split()
-WELCOME_VID = environ.get("WELCOME_VID", "https://envs.sh/z_s.mp4")
+WELCOME_VID = environ.get("WELCOME_VID", "https://envs.sh/JLf.mp4")
 
 #premium imag
 REFFER_PIC = environ.get('REFFER_PIC', 'https://envs.sh/KH7.jpg')
