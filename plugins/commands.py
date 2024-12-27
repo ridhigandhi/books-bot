@@ -343,8 +343,8 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    protect_content=True if pre == 'filep' else False,
-                    reply_markup=reply_markup
+                    protect_content=True if pre == 'filep' else False
+                    #reply_markup=reply_markup
                 )
                 filesarr.append(msg)
             if await db.get_setting("AUTO_FILE_DELETE", default=AUTO_FILE_DELETE):
@@ -378,8 +378,8 @@ async def start(client, message):
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
-                    protect_content=True if pre == 'filep' else False,
-                    reply_markup=reply_markup
+                    protect_content=True if pre == 'filep' else False
+                    #reply_markup=reply_markup
                 )
                 filetype = msg.media
                 file = getattr(msg, filetype.value)
@@ -416,7 +416,7 @@ async def start(client, message):
                                InlineKeyboardButton('✨ Rᴇᴍᴏᴠᴇ Lɪᴍɪᴛ ✨', callback_data=f'premium_info')
                               ]]
                     reply_markup = InlineKeyboardMarkup(buttons)
-                    return await message.reply_text(script.FILE_LIMIT,
+                    return await message.reply_text(script.FILE_LIMIT, 
                     reply_markup=reply_markup)
         button = [[
             InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ / ᴅᴏᴡɴʟᴏᴀᴅ 📥", callback_data=f"streaming#{file_id}#{grp_id}")
@@ -426,8 +426,8 @@ async def start(client, message):
             chat_id=message.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            protect_content=True if pre == 'filep' else False,
-            reply_markup=reply_markup
+            protect_content=True if pre == 'filep' else False
+            #reply_markup=reply_markup
         )
         if await db.get_setting("AUTO_FILE_DELETE", default=AUTO_FILE_DELETE):
             del_msg=await message.reply("<b>⚠️ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 10 ᴍɪɴᴜᴛᴇs\n\nᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ sᴏᴍᴇᴡʜᴇʀᴇ ʙᴇғᴏʀᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ..</b>") 
