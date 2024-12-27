@@ -205,27 +205,27 @@ async def next_page(bot, query):
                 ]
                 for file in files
             ]
-            btn.insert(0, [
+            """btn.insert(0, [
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{req}"), 
                 InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{req}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{req}"),
                 InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{req}")
-            ])
+            ])"""
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
             ])
         else:
             btn = []
-            btn.insert(0, [
+            """btn.insert(0, [
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{req}"), 
                 InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{req}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{req}"),
                 InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{req}")
-            ])
+            ])"""
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
             ])
@@ -340,27 +340,27 @@ async def language_check(bot, query):
                     ]
                     for file in files
                 ]
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
             else:
                 btn = []
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
@@ -470,27 +470,27 @@ async def quality_check(bot, query):
                     ]
                     for file in files
                 ]
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
             else:
                 btn = []
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
@@ -592,27 +592,27 @@ async def seasons_check(bot, query):
                     ]
                     for file in files
                 ]
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
             else:
                 btn = []
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
@@ -721,27 +721,27 @@ async def episode_check(bot, query):
                     ]
                     for file in files
                 ]
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
             else:
                 btn = []
-                btn.insert(0, [
+                """btn.insert(0, [
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{userid}"), 
                     InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"epi#{userid}")
                 ])
                 btn.insert(0, [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
                     InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{userid}")
-                ])
+                ])"""
                 btn.insert(0, [
                     InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}")
                 ])
@@ -1840,27 +1840,27 @@ async def auto_filter(client, msg, spoll=False):
                 for file in files
             ]
             
-            btn.insert(0, [
+            """btn.insert(0, [
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{message.from_user.id}"), 
                 InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{message.from_user.id}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{message.from_user.id}"),
                 InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{message.from_user.id}"),
-            ])
+            ])"""
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}"), 
             ])
         else:
             btn = []
-            btn.insert(0, [
+            """btn.insert(0, [
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴ", callback_data=f"seas#{message.from_user.id}"), 
                 InlineKeyboardButton("Eᴘɪsᴏᴅᴇ", callback_data=f"epi#{message.from_user.id}")
             ])
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{message.from_user.id}"),
                 InlineKeyboardButton("Qᴜᴀʟɪᴛʏ", callback_data=f"quality#{message.from_user.id}"),
-            ])
+            ])"""
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ !", callback_data=f"sendfiles#{key}"), 
             ])
